@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: f74e7c6fa354f1f46aa2f6f6d047d503
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5618228262315240052
+    second: GZ2-Zombie-Cop_0
+  - first:
+      213: -982085090897743708
+    second: GZ2-Zombie-Cop_1
+  - first:
+      213: -4928195159222715571
+    second: GZ2-Zombie-Cop_2
+  - first:
+      213: 2744086845699929005
+    second: GZ2-Zombie-Cop_3
+  - first:
+      213: 8201903423957420650
+    second: GZ2-Zombie-Cop_4
+  - first:
+      213: 758042169870897293
+    second: GZ2-Zombie-Cop_5
+  - first:
+      213: 7713745982827457863
+    second: GZ2-Zombie-Cop_6
+  - first:
+      213: -869745061135173544
+    second: GZ2-Zombie-Cop_7
+  - first:
+      213: -5699634181877076136
+    second: GZ2-Zombie-Cop_8
+  - first:
+      213: -3306845837216431124
+    second: GZ2-Zombie-Cop_9
+  - first:
+      213: -2918901628042930520
+    second: GZ2-Zombie-Cop_10
+  - first:
+      213: -8743223442693195902
+    second: GZ2-Zombie-Cop_11
+  - first:
+      213: -4221134400641852322
+    second: GZ2-Zombie-Cop_12
+  - first:
+      213: 8723095710486873979
+    second: GZ2-Zombie-Cop_13
+  - first:
+      213: -4236650557796305751
+    second: GZ2-Zombie-Cop_14
+  - first:
+      213: -5002822199892860248
+    second: GZ2-Zombie-Cop_15
+  - first:
+      213: 3304685509049716249
+    second: GZ2-Zombie-Cop_16
+  - first:
+      213: 5563674026580187319
+    second: GZ2-Zombie-Cop_17
+  - first:
+      213: -82815554757622587
+    second: GZ2-Zombie-Cop_18
+  - first:
+      213: -5738465089813986536
+    second: GZ2-Zombie-Cop_19
+  - first:
+      213: -7496863609893032539
+    second: GZ2-Zombie-Cop_20
+  - first:
+      213: -8847049402072242626
+    second: GZ2-Zombie-Cop_21
+  - first:
+      213: -4229141362717088789
+    second: GZ2-Zombie-Cop_22
+  - first:
+      213: 2648028389895889775
+    second: GZ2-Zombie-Cop_23
+  - first:
+      213: 8937538313925370119
+    second: GZ2-Zombie-Cop_24
+  - first:
+      213: 6230004352004118320
+    second: GZ2-Zombie-Cop_25
+  - first:
+      213: -169138182561176358
+    second: GZ2-Zombie-Cop_26
+  - first:
+      213: -4074217090328415575
+    second: GZ2-Zombie-Cop_27
+  - first:
+      213: -527821824455608759
+    second: GZ2-Zombie-Cop_28
+  - first:
+      213: 4321449064718882466
+    second: GZ2-Zombie-Cop_29
+  - first:
+      213: 4231536474339234358
+    second: GZ2-Zombie-Cop_30
+  - first:
+      213: 7572211571997211690
+    second: GZ2-Zombie-Cop_31
+  - first:
+      213: 7514379237441494094
+    second: GZ2-Zombie-Cop_32
+  - first:
+      213: 3445732230473771777
+    second: GZ2-Zombie-Cop_33
+  - first:
+      213: 6258879497688612060
+    second: GZ2-Zombie-Cop_34
+  - first:
+      213: -770859554394924435
+    second: GZ2-Zombie-Cop_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 89
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85d3ad792b0802b0800000000000000
+      internalID: -5618228262315240052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 89
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a035d920deee52f0800000000000000
+      internalID: -982085090897743708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 89
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4bfab60d988b9bb0800000000000000
+      internalID: -4928195159222715571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 89
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da334c68274f41620800000000000000
+      internalID: 2744086845699929005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_4
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 89
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6aca0365b303d170800000000000000
+      internalID: 8201903423957420650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_5
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 91
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80dbe3565b158a00800000000000000
+      internalID: 758042169870897293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_6
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 89
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74de60a2a1bbc0b60800000000000000
+      internalID: 7713745982827457863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_7
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 94
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85833e9997b0ee3f0800000000000000
+      internalID: -869745061135173544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_8
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 91
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85fea87d8e4d6e0b0800000000000000
+      internalID: -5699634181877076136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_9
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 93
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce34cb14b39bb12d0800000000000000
+      internalID: -3306845837216431124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 59
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6113e2f6afd77d0800000000000000
+      internalID: -2918901628042930520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 60
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287776a3a94d9a680800000000000000
+      internalID: -8743223442693195902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_12
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 59
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c9f8c80a48b65c0800000000000000
+      internalID: -4221134400641852322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_13
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 61
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77cd4de459ae0970800000000000000
+      internalID: 8723095710486873979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_14
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 59
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a43711b3c46435c0800000000000000
+      internalID: -4236650557796305751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_15
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 59
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2a2fc17b7629ab0800000000000000
+      internalID: -5002822199892860248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_16
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 60
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e0a4526f99cdd20800000000000000
+      internalID: 3304685509049716249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_17
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 59
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b81160bc04263d40800000000000000
+      internalID: 5563674026580187319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_18
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 59
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c48bc411b7c9def0800000000000000
+      internalID: -82815554757622587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_19
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 59
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81348ad8760ec50b0800000000000000
+      internalID: -5738465089813986536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_20
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 59
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ade5c2544ac5f790800000000000000
+      internalID: -7496863609893032539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_21
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 59
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36e6274177f83580800000000000000
+      internalID: -8847049402072242626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_22
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 61
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3265a66521f45c0800000000000000
+      internalID: -4229141362717088789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 29
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63e4ee6acfafb420800000000000000
+      internalID: 2648028389895889775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 29
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70127ff4eb3880c70800000000000000
+      internalID: 8937538313925370119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_25
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 29
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037d75e33fb657650800000000000000
+      internalID: 6230004352004118320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_26
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 29
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad46c7618b917adf0800000000000000
+      internalID: -169138182561176358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2362974297577c0800000000000000
+      internalID: -4074217090328415575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_28
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946ff90e8dccca8f0800000000000000
+      internalID: -527821824455608759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_29
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a65381470fd8fb30800000000000000
+      internalID: 4321449064718882466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_30
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6325917f00079ba30800000000000000
+      internalID: 4231536474339234358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2cfef03e46e51960800000000000000
+      internalID: 7572211571997211690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_32
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 0
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c55438a10784860800000000000000
+      internalID: 7514379237441494094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_33
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10be0841533b1df20800000000000000
+      internalID: 3445732230473771777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_34
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc74bffdb10cd650800000000000000
+      internalID: 6258879497688612060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Cop_35
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 0
+        width: 105
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a1398c15b5d45f0800000000000000
+      internalID: -770859554394924435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GZ2-Zombie-Cop_0: -5618228262315240052
+      GZ2-Zombie-Cop_1: -982085090897743708
+      GZ2-Zombie-Cop_10: -2918901628042930520
+      GZ2-Zombie-Cop_11: -8743223442693195902
+      GZ2-Zombie-Cop_12: -4221134400641852322
+      GZ2-Zombie-Cop_13: 8723095710486873979
+      GZ2-Zombie-Cop_14: -4236650557796305751
+      GZ2-Zombie-Cop_15: -5002822199892860248
+      GZ2-Zombie-Cop_16: 3304685509049716249
+      GZ2-Zombie-Cop_17: 5563674026580187319
+      GZ2-Zombie-Cop_18: -82815554757622587
+      GZ2-Zombie-Cop_19: -5738465089813986536
+      GZ2-Zombie-Cop_2: -4928195159222715571
+      GZ2-Zombie-Cop_20: -7496863609893032539
+      GZ2-Zombie-Cop_21: -8847049402072242626
+      GZ2-Zombie-Cop_22: -4229141362717088789
+      GZ2-Zombie-Cop_23: 2648028389895889775
+      GZ2-Zombie-Cop_24: 8937538313925370119
+      GZ2-Zombie-Cop_25: 6230004352004118320
+      GZ2-Zombie-Cop_26: -169138182561176358
+      GZ2-Zombie-Cop_27: -4074217090328415575
+      GZ2-Zombie-Cop_28: -527821824455608759
+      GZ2-Zombie-Cop_29: 4321449064718882466
+      GZ2-Zombie-Cop_3: 2744086845699929005
+      GZ2-Zombie-Cop_30: 4231536474339234358
+      GZ2-Zombie-Cop_31: 7572211571997211690
+      GZ2-Zombie-Cop_32: 7514379237441494094
+      GZ2-Zombie-Cop_33: 3445732230473771777
+      GZ2-Zombie-Cop_34: 6258879497688612060
+      GZ2-Zombie-Cop_35: -770859554394924435
+      GZ2-Zombie-Cop_4: 8201903423957420650
+      GZ2-Zombie-Cop_5: 758042169870897293
+      GZ2-Zombie-Cop_6: 7713745982827457863
+      GZ2-Zombie-Cop_7: -869745061135173544
+      GZ2-Zombie-Cop_8: -5699634181877076136
+      GZ2-Zombie-Cop_9: -3306845837216431124
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

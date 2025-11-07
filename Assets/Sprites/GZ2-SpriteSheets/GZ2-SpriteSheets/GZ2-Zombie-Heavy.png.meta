@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 4fe8c5f031291004eb73d04ab0242f5c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5333983675150588080
+    second: GZ2-Zombie-Heavy_0
+  - first:
+      213: 5344331982572565699
+    second: GZ2-Zombie-Heavy_1
+  - first:
+      213: -6018328457831981916
+    second: GZ2-Zombie-Heavy_2
+  - first:
+      213: 7953289016073677442
+    second: GZ2-Zombie-Heavy_3
+  - first:
+      213: 5901467605773858253
+    second: GZ2-Zombie-Heavy_4
+  - first:
+      213: 7259040345903278265
+    second: GZ2-Zombie-Heavy_5
+  - first:
+      213: -9105895341032990954
+    second: GZ2-Zombie-Heavy_6
+  - first:
+      213: 993364648013754958
+    second: GZ2-Zombie-Heavy_7
+  - first:
+      213: 22690058164042073
+    second: GZ2-Zombie-Heavy_8
+  - first:
+      213: 4033318578597831677
+    second: GZ2-Zombie-Heavy_9
+  - first:
+      213: 6689409911288440155
+    second: GZ2-Zombie-Heavy_10
+  - first:
+      213: 7255464025884332810
+    second: GZ2-Zombie-Heavy_11
+  - first:
+      213: 8027482092502149622
+    second: GZ2-Zombie-Heavy_12
+  - first:
+      213: -3644487840911741476
+    second: GZ2-Zombie-Heavy_13
+  - first:
+      213: -4718302480853876468
+    second: GZ2-Zombie-Heavy_14
+  - first:
+      213: 8928628628883783022
+    second: GZ2-Zombie-Heavy_15
+  - first:
+      213: 4116282504385842764
+    second: GZ2-Zombie-Heavy_16
+  - first:
+      213: 1553802894377897889
+    second: GZ2-Zombie-Heavy_17
+  - first:
+      213: -8068342178774982292
+    second: GZ2-Zombie-Heavy_18
+  - first:
+      213: -9078910781055152461
+    second: GZ2-Zombie-Heavy_19
+  - first:
+      213: 8326956302352462925
+    second: GZ2-Zombie-Heavy_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 89
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057aaecab12e9f5b0800000000000000
+      internalID: -5333983675150588080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 89
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c43ff66f91ea2a40800000000000000
+      internalID: 5344331982572565699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 89
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4acdc41772a9a7ca0800000000000000
+      internalID: -6018328457831981916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_3
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 89
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a6617c832cf5e60800000000000000
+      internalID: 7953289016073677442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 89
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc530a7258936e150800000000000000
+      internalID: 5901467605773858253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 59
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b82bcb0cba4db460800000000000000
+      internalID: 7259040345903278265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 59
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61718d3be6c51a180800000000000000
+      internalID: -9105895341032990954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 59
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e427a4162e329cd00800000000000000
+      internalID: 993364648013754958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_8
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 59
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959fcc8dc7c905000800000000000000
+      internalID: 22690058164042073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 29
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3ae47b0e939f730800000000000000
+      internalID: 4033318578597831677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 29
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55235f4fde85dc50800000000000000
+      internalID: 6689409911288440155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 29
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a031677271690b460800000000000000
+      internalID: 7255464025884332810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_12
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 29
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f966648e68576f60800000000000000
+      internalID: 8027482092502149622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdda9363e9d2c6dc0800000000000000
+      internalID: -3644487840911741476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_14
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c014cdd64e8358eb0800000000000000
+      internalID: -4718302480853876468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_15
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d300c9e6cd8eb70800000000000000
+      internalID: 8928628628883783022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_16
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ec215f029ff1930800000000000000
+      internalID: 4116282504385842764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af4e520087309510800000000000000
+      internalID: 1553802894377897889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_18
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61e0db498d770090800000000000000
+      internalID: -8068342178774982292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_19
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be4ebb2fba310280800000000000000
+      internalID: -9078910781055152461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Zombie-Heavy_20
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 73
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d443bed83aa4f8370800000000000000
+      internalID: 8326956302352462925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GZ2-Zombie-Heavy_0: -5333983675150588080
+      GZ2-Zombie-Heavy_1: 5344331982572565699
+      GZ2-Zombie-Heavy_10: 6689409911288440155
+      GZ2-Zombie-Heavy_11: 7255464025884332810
+      GZ2-Zombie-Heavy_12: 8027482092502149622
+      GZ2-Zombie-Heavy_13: -3644487840911741476
+      GZ2-Zombie-Heavy_14: -4718302480853876468
+      GZ2-Zombie-Heavy_15: 8928628628883783022
+      GZ2-Zombie-Heavy_16: 4116282504385842764
+      GZ2-Zombie-Heavy_17: 1553802894377897889
+      GZ2-Zombie-Heavy_18: -8068342178774982292
+      GZ2-Zombie-Heavy_19: -9078910781055152461
+      GZ2-Zombie-Heavy_2: -6018328457831981916
+      GZ2-Zombie-Heavy_20: 8326956302352462925
+      GZ2-Zombie-Heavy_3: 7953289016073677442
+      GZ2-Zombie-Heavy_4: 5901467605773858253
+      GZ2-Zombie-Heavy_5: 7259040345903278265
+      GZ2-Zombie-Heavy_6: -9105895341032990954
+      GZ2-Zombie-Heavy_7: 993364648013754958
+      GZ2-Zombie-Heavy_8: 22690058164042073
+      GZ2-Zombie-Heavy_9: 4033318578597831677
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

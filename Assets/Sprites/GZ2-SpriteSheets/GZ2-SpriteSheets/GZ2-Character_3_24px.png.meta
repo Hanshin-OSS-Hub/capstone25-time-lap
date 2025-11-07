@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 20fe8d6870608ce499424552153b2984
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4052986369691226889
+    second: GZ2-Character_3_24px_0
+  - first:
+      213: 3178636848606438889
+    second: GZ2-Character_3_24px_1
+  - first:
+      213: -3117684845051858581
+    second: GZ2-Character_3_24px_2
+  - first:
+      213: 632918670231273520
+    second: GZ2-Character_3_24px_3
+  - first:
+      213: -496121942421870625
+    second: GZ2-Character_3_24px_4
+  - first:
+      213: 3446210492158668150
+    second: GZ2-Character_3_24px_5
+  - first:
+      213: 5162723752663299659
+    second: GZ2-Character_3_24px_6
+  - first:
+      213: 3417646692758263418
+    second: GZ2-Character_3_24px_7
+  - first:
+      213: -7285417069070013574
+    second: GZ2-Character_3_24px_8
+  - first:
+      213: -7868279122593708084
+    second: GZ2-Character_3_24px_9
+  - first:
+      213: 9184606759919813618
+    second: GZ2-Character_3_24px_10
+  - first:
+      213: -7760796854652661660
+    second: GZ2-Character_3_24px_11
+  - first:
+      213: -1398364596896626925
+    second: GZ2-Character_3_24px_12
+  - first:
+      213: -2656772813649895629
+    second: GZ2-Character_3_24px_13
+  - first:
+      213: 4526817385178022381
+    second: GZ2-Character_3_24px_14
+  - first:
+      213: 1477880290649627720
+    second: GZ2-Character_3_24px_15
+  - first:
+      213: 3926069896708039687
+    second: GZ2-Character_3_24px_16
+  - first:
+      213: 259122740007887581
+    second: GZ2-Character_3_24px_17
+  - first:
+      213: -3460388699697461971
+    second: GZ2-Character_3_24px_18
+  - first:
+      213: -2754815139557781079
+    second: GZ2-Character_3_24px_19
+  - first:
+      213: -7384630178040460613
+    second: GZ2-Character_3_24px_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 47
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90312fc21a91f3830800000000000000
+      internalID: 4052986369691226889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 47
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e567276f59cc1c20800000000000000
+      internalID: 3178636848606438889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 47
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61b011d622cbb4d0800000000000000
+      internalID: -3117684845051858581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_3
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 47
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03009de5d2498c800800000000000000
+      internalID: 632918670231273520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 23
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7eaa0d8bb6d19f0800000000000000
+      internalID: -496121942421870625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 23
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d675e0f2663df20800000000000000
+      internalID: 3446210492158668150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_6
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 24
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46b7f656eda5a740800000000000000
+      internalID: 5162723752663299659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_7
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 23
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7615a14f8bed6f20800000000000000
+      internalID: 3417646692758263418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 23
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ba38586cff4ea90800000000000000
+      internalID: -7285417069070013574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 23
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc70e2073d14ec290800000000000000
+      internalID: -7868279122593708084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 24
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f30cae9f27467f70800000000000000
+      internalID: 9184606759919813618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 23
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4609570116c1c4490800000000000000
+      internalID: -7760796854652661660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3178e77dec2089ce0800000000000000
+      internalID: -1398364596896626925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f9b71c33f312bd0800000000000000
+      internalID: -2656772813649895629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1499e7d6c72de30800000000000000
+      internalID: 4526817385178022381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_15
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cd8b05b4c728410800000000000000
+      internalID: 1477880290649627720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70423a415c33c7630800000000000000
+      internalID: 3926069896708039687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_17
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2656752c6989300800000000000000
+      internalID: 259122740007887581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_18
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25c1c1cfca3affc0800000000000000
+      internalID: -3460388699697461971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_19
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a15ac8e93ee4c9d0800000000000000
+      internalID: -2754815139557781079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GZ2-Character_3_24px_20
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbac4408af5848990800000000000000
+      internalID: -7384630178040460613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GZ2-Character_3_24px_0: 4052986369691226889
+      GZ2-Character_3_24px_1: 3178636848606438889
+      GZ2-Character_3_24px_10: 9184606759919813618
+      GZ2-Character_3_24px_11: -7760796854652661660
+      GZ2-Character_3_24px_12: -1398364596896626925
+      GZ2-Character_3_24px_13: -2656772813649895629
+      GZ2-Character_3_24px_14: 4526817385178022381
+      GZ2-Character_3_24px_15: 1477880290649627720
+      GZ2-Character_3_24px_16: 3926069896708039687
+      GZ2-Character_3_24px_17: 259122740007887581
+      GZ2-Character_3_24px_18: -3460388699697461971
+      GZ2-Character_3_24px_19: -2754815139557781079
+      GZ2-Character_3_24px_2: -3117684845051858581
+      GZ2-Character_3_24px_20: -7384630178040460613
+      GZ2-Character_3_24px_3: 632918670231273520
+      GZ2-Character_3_24px_4: -496121942421870625
+      GZ2-Character_3_24px_5: 3446210492158668150
+      GZ2-Character_3_24px_6: 5162723752663299659
+      GZ2-Character_3_24px_7: 3417646692758263418
+      GZ2-Character_3_24px_8: -7285417069070013574
+      GZ2-Character_3_24px_9: -7868279122593708084
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
