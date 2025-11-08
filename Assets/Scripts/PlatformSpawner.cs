@@ -91,7 +91,7 @@ public class PlatformSpawner : MonoBehaviour
             FallingPlatform fallingPlatform = platform.GetComponent<FallingPlatform>();
             if (fallingPlatform != null)
             {
-                fallingPlatform.OnDestroyed += OnPlatformDestroyed;
+               fallingPlatform.OnDestroyed += OnPlatformDestroyed;
             }
         }
 

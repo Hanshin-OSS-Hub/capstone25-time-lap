@@ -57,34 +57,32 @@ public class FallingPlatform : MonoBehaviour
 
         // 시각 효과 (노란색 반투명)
         spriteRenderer.color = new Color(1f, 1f, 0f, 0.7f);
-
-        // 일정 시간 후 해제
         Invoke(nameof(Unfreeze), duration);
     }
 
     public void Unfreeze()
-    {
-        isFrozen = false;
-        rb.isKinematic = false;
-        spriteRenderer.color = originalColor;
+{
+    isFrozen = false;
+    rb.isKinematic = false;
+    spriteRenderer.color = originalColor;
 
-        // 낙하 재개
-        StartFalling();
-    }
+    // 낙하 재개
+    StartFalling();
+}
 
-    void OnCollisionEnter2D(Collision2D collision)
+void OnCollisionEnter2D(Collision2D collision)
+{
+    // 바닥에 닿으면 파괴
+    if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
     {
-        // 바닥에 닿으면 파괴
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
-        {
-            OnDestroyed?.Invoke(); // 이벤트 호출
-            Destroy(gameObject);
-        }
+        OnDestroyed?.Invoke(); // 이벤트 호출
+        Destroy(gameObject);
     }
+}
 
-    // OnDestroy 메서드 추가 (수명 종료 시에도 이벤트 호출)
-    void OnDestroy()
-    {
-        OnDestroyed?.Invoke();
-    }
+// OnDestroy 메서드 추가 (수명 종료 시에도 이벤트 호출)
+void OnDestroy()
+{
+    OnDestroyed?.Invoke();
+}
 }
