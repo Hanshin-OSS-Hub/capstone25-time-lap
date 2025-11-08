@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &101086879 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5972796477824206409, guid: 71ce48954a00dc14faca459435659add, type: 3}
+  m_PrefabInstance: {fileID: 9065278595728374028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +475,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35befc03158635b489eedfc48dfd0570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!1 &1951558994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7638028465905081302, guid: 71ce48954a00dc14faca459435659add, type: 3}
+  m_PrefabInstance: {fileID: 9065278595728374028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1951558996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951558994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 983c0db749854d446a1ded91cd603089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GunRotation
+  bulletPrefab: {fileID: 531178800415755469, guid: 1e1bf6fd5469bde459acd4d7fe43830b, type: 3}
+  firePoint: {fileID: 101086879}
+  fireRate: 5
+  bulletSpeed: 10
 --- !u!1001 &392430937944789388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -600,6 +626,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 533902415151854140, guid: 71ce48954a00dc14faca459435659add, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 533902415151854140, guid: 71ce48954a00dc14faca459435659add, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 533902415151854140, guid: 71ce48954a00dc14faca459435659add, type: 3}
+      propertyPath: m_SortingOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 533902415151854140, guid: 71ce48954a00dc14faca459435659add, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5693088511332655316, guid: 71ce48954a00dc14faca459435659add, type: 3}
       propertyPath: m_Name
       value: Player
@@ -667,6 +709,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5693088511332655316, guid: 71ce48954a00dc14faca459435659add, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1854972157}
+    - targetCorrespondingSourceObject: {fileID: 7638028465905081302, guid: 71ce48954a00dc14faca459435659add, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1951558996}
   m_SourcePrefab: {fileID: 100100000, guid: 71ce48954a00dc14faca459435659add, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
