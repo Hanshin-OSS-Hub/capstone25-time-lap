@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections; // Coroutine 사용을 위해 추가
 
 public class FallingPlatform : MonoBehaviour
 {
@@ -11,10 +11,15 @@ public class FallingPlatform : MonoBehaviour
     [SerializeField] private bool canBeFrozen = true;
     private bool isFrozen = false;
 
+    private PlatformSpawner spawnerReference;
+
     public System.Action OnDestroyed;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
+
+    // 🟢 (추가) Lifetime 관리를 위한 Coroutine 참조
+    private Coroutine lifetimeCoroutine;
 
     void Start()
     {
@@ -22,19 +27,25 @@ public class FallingPlatform : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
 
-        // 낙하 시작
         StartFalling();
 
-        // 일정 시간 후 자동 파괴
+        // 🟢 (수정) 일정 시간 후 자동 파괴를 Coroutine으로 시작
         if (lifetime > 0)
         {
-            Destroy(gameObject, lifetime);
+            lifetimeCoroutine = StartCoroutine(LifetimeRoutine());
         }
+    }
+
+    // 🟢 (추가) Lifetime Coroutine
+    IEnumerator LifetimeRoutine()
+    {
+        yield return new WaitForSeconds(lifetime);
+        // 수명이 다하면 스스로 파괴
+        Destroy(gameObject);
     }
 
     void Update()
     {
-        // 정지 상태가 아니면 계속 낙하
         if (!isFrozen)
         {
             rb.linearVelocity = new Vector2(0, -fallSpeed);
@@ -46,43 +57,80 @@ public class FallingPlatform : MonoBehaviour
         rb.linearVelocity = new Vector2(0, -fallSpeed);
     }
 
-    // 시간정지 기능 (나중에 레이저와 연동)
-    public void Freeze(float duration)
+    public void Freeze(float duration, PlatformSpawner spawner)
     {
-        if (!canBeFrozen) return;
+        if (!canBeFrozen || isFrozen) return;
+
+        this.spawnerReference = spawner;
+
+        // 🟢 (수정) 정지 명령 시, 기존에 진행 중이던 수명(Lifetime) 타이머를 중지
+        if (lifetimeCoroutine != null)
+        {
+            StopCoroutine(lifetimeCoroutine);
+            lifetimeCoroutine = null;
+        }
 
         isFrozen = true;
         rb.linearVelocity = Vector2.zero;
         rb.isKinematic = true;
 
-        // 시각 효과 (노란색 반투명)
         spriteRenderer.color = new Color(1f, 1f, 0f, 0.7f);
-        Invoke(nameof(Unfreeze), duration);
+        Invoke(nameof(Unfreeze), duration); // 10초 후 Unfreeze 예약
     }
 
     public void Unfreeze()
-{
-    isFrozen = false;
-    rb.isKinematic = false;
-    spriteRenderer.color = originalColor;
-
-    // 낙하 재개
-    StartFalling();
-}
-
-void OnCollisionEnter2D(Collision2D collision)
-{
-    // 바닥에 닿으면 파괴
-    if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
     {
-        OnDestroyed?.Invoke(); // 이벤트 호출
-        Destroy(gameObject);
-    }
-}
+        // 🟢 (추가) isFrozen 상태가 아닐 때 중복 호출 방지
+        if (!isFrozen) return;
 
-// OnDestroy 메서드 추가 (수명 종료 시에도 이벤트 호출)
-void OnDestroy()
-{
-    OnDestroyed?.Invoke();
-}
+        isFrozen = false;
+        rb.isKinematic = false;
+        spriteRenderer.color = originalColor;
+
+        StartFalling();
+
+        // 🟢 (수정) 스포너에게 생성 재개 알림
+        if (spawnerReference != null)
+        {
+            spawnerReference.ResumeSpawning();
+            spawnerReference = null;
+        }
+
+        // 🟢 (추가) 정지 해제 후, 수명 타이머를 다시 시작 (옵션, 필요 없으면 주석 처리)
+        if (lifetime > 0)
+        {
+            lifetimeCoroutine = StartCoroutine(LifetimeRoutine());
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            // 🟢 (수정) ResumeSpawning 처리는 OnDestroy에서 일괄 처리
+            OnDestroyed?.Invoke();
+            Destroy(gameObject);
+        }
+    }
+
+    // 🟢 (핵심 수정) 오브젝트가 파괴되는 모든 순간(수명 만료, 충돌 등) Spawner 재개 처리
+    void OnDestroy()
+    {
+        // 1. Invoke로 예약된 Unfreeze 호출을 취소 (메모리 누수 방지)
+        CancelInvoke(nameof(Unfreeze));
+
+        // 2. 오브젝트가 '정지된 상태'에서 파괴된다면 Spawner를 수동으로 재개해야 함.
+        if (isFrozen && spawnerReference != null)
+        {
+            spawnerReference.ResumeSpawning();
+        }
+
+        // 3. Lifetime Coroutine이 아직 실행 중이라면 중지
+        if (lifetimeCoroutine != null)
+        {
+            StopCoroutine(lifetimeCoroutine);
+        }
+
+        OnDestroyed?.Invoke();
+    }
 }
