@@ -1,22 +1,22 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using System.Collections;
 
 public class PlatformSpawner : MonoBehaviour
 {
-    [Header("½ºÆ÷³Ê ¼³Á¤")]
+    [Header("ìŠ¤í¬ë„ˆ ì„¤ì •")]
     [SerializeField] private GameObject platformPrefab;
     [SerializeField] private float spawnInterval = 2f;
     [SerializeField] private bool autoStart = true;
 
-    [Header("»ı¼º ¹æ½Ä")]
-    [Tooltip("true: ÇÑ °³¾¿¸¸ »ı¼º (ÆÄ±« ½Ã ´ÙÀ½ »ı¼º)\nfalse: ÃÖ´ë °³¼ö±îÁö »ı¼º")]
+    [Header("ìƒì„± ë°©ì‹")]
+    [Tooltip("true: í•œ ê°œì”©ë§Œ ìƒì„± (íŒŒê´´ ì‹œ ë‹¤ìŒ ìƒì„±)\nfalse: ìµœëŒ€ ê°œìˆ˜ê¹Œì§€ ìƒì„±")]
     [SerializeField] private bool oneAtATime = true;
-    [SerializeField] private int maxPlatforms = 5; // oneAtATimeÀÌ falseÀÏ ¶§ »ç¿ë
+    [SerializeField] private int maxPlatforms = 5;
 
-    private GameObject currentPlatform; // ÇöÀç »ı¼ºµÈ ÇÃ·§Æû
+    private GameObject currentPlatform;
     private int currentPlatformCount = 0;
     private bool isSpawning = false;
-    private bool canSpawn = true;
+    private bool canSpawn = true; // ì¼ì‹œì •ì§€ ì œì–´ í”Œë˜ê·¸
 
     void Start()
     {
@@ -45,20 +45,22 @@ public class PlatformSpawner : MonoBehaviour
     {
         while (isSpawning)
         {
-            if (oneAtATime)
+            // canSpawnì´ false(ì¼ì‹œì •ì§€)ë©´ ëŒ€ê¸°
+            if (canSpawn)
             {
-                // ÇÑ °³¾¿¸¸ »ı¼º ¸ğµå
-                if (currentPlatform == null && canSpawn)
+                if (oneAtATime)
                 {
-                    SpawnPlatform();
+                    if (currentPlatform == null)
+                    {
+                        SpawnPlatform();
+                    }
                 }
-            }
-            else
-            {
-                // ÃÖ´ë °³¼ö±îÁö »ı¼º ¸ğµå
-                if (currentPlatformCount < maxPlatforms && canSpawn)
+                else
                 {
-                    SpawnPlatform();
+                    if (currentPlatformCount < maxPlatforms)
+                    {
+                        SpawnPlatform();
+                    }
                 }
             }
 
@@ -68,63 +70,56 @@ public class PlatformSpawner : MonoBehaviour
 
     void SpawnPlatform()
     {
-        if (platformPrefab == null)
-        {
-            Debug.LogError("Platform PrefabÀÌ ¼³Á¤µÇÁö ¾Ê¾Ò½À´Ï´Ù!");
-            return;
-        }
+        if (platformPrefab == null) return;
 
-        // ÇÃ·§Æû »ı¼º
-        GameObject platform = Instantiate(platformPrefab, transform.position, Quaternion.identity);
+        GameObject platformObj = Instantiate(platformPrefab, transform.position, Quaternion.identity);
 
-        if (oneAtATime)
+        // ğŸŸ¢ [ì¶”ê°€] ìƒì„±ëœ í”Œë«í¼ì—ê²Œ ìŠ¤í¬ë„ˆ ì •ë³´ ì „ë‹¬
+        FallingPlatform fallingPlatform = platformObj.GetComponent<FallingPlatform>();
+        if (fallingPlatform != null)
         {
-            // ÇÑ °³¾¿ ¸ğµå: ÇöÀç ÇÃ·§Æû ÂüÁ¶ ÀúÀå
-            currentPlatform = platform;
-        }
-        else
-        {
-            // ´ÙÁß »ı¼º ¸ğµå: Ä«¿îÆ® Áõ°¡
-            currentPlatformCount++;
+            fallingPlatform.Init(this);
 
-            // ÆÄ±« ½Ã Ä«¿îÆ® °¨¼Ò ÀÌº¥Æ® µî·Ï
-            FallingPlatform fallingPlatform = platform.GetComponent<FallingPlatform>();
-            if (fallingPlatform != null)
+            if (!oneAtATime)
             {
-               fallingPlatform.OnDestroyed += OnPlatformDestroyed;
+                // ë‹¤ì¤‘ ìƒì„± ëª¨ë“œì¼ ë•Œ íŒŒê´´ ì´ë²¤íŠ¸ ì—°ê²°
+                fallingPlatform.OnDestroyed += OnPlatformDestroyed;
             }
         }
 
-        Debug.Log($"[{gameObject.name}] ÇÃ·§Æû »ı¼º!");
+        if (oneAtATime)
+        {
+            currentPlatform = platformObj;
+        }
+        else
+        {
+            currentPlatformCount++;
+        }
+
+        Debug.Log($"[{gameObject.name}] í”Œë«í¼ ìƒì„±!");
     }
 
     void OnPlatformDestroyed()
     {
         currentPlatformCount--;
-        Debug.Log($"[{gameObject.name}] ÇÃ·§Æû ÆÄ±«µÊ. ³²Àº °³¼ö: {currentPlatformCount}");
     }
 
-    // ½Ã°£Á¤Áö ½Ã È£Ãâ (ÇÃ·¹ÀÌ¾î ·¹ÀÌÀú¿¡¼­ È£Ãâ)
     public void PauseSpawning()
     {
         canSpawn = false;
-        Debug.Log($"[{gameObject.name}] ½ºÆ÷³Ê ÀÏ½ÃÁ¤Áö");
+        Debug.Log($"[{gameObject.name}] ìŠ¤í¬ë„ˆ ì¼ì‹œì •ì§€");
     }
 
-    // ½Ã°£Á¤Áö ÇØÁ¦ ½Ã È£Ãâ
     public void ResumeSpawning()
     {
         canSpawn = true;
-        Debug.Log($"[{gameObject.name}] ½ºÆ÷³Ê Àç°³");
+        Debug.Log($"[{gameObject.name}] ìŠ¤í¬ë„ˆ ì¬ê°œ");
     }
 
-    // Gizmo·Î ½ºÆ÷³Ê À§Ä¡ Ç¥½Ã
     void OnDrawGizmos()
     {
         Gizmos.color = canSpawn ? Color.green : Color.red;
         Gizmos.DrawWireSphere(transform.position, 0.5f);
-
-        // ½ºÆ÷³Ê ¹øÈ£ Ç¥½Ã (Scene ºä¿¡¼­)
 #if UNITY_EDITOR
         UnityEditor.Handles.Label(transform.position + Vector3.up * 0.8f, gameObject.name);
 #endif

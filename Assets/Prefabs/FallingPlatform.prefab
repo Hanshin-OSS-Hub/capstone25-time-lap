@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5234405256913080463}
   - component: {fileID: 1063484183894321164}
   - component: {fileID: 7472858137481929011}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: FallingPlatform
   m_TagString: 'Freezable '
   m_Icon: {fileID: 0}
@@ -153,6 +153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FallingPlatform
   fallSpeed: 15
   lifetime: 2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   canBeFrozen: 1
 --- !u!50 &7472858137481929011
 Rigidbody2D:
@@ -162,7 +165,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2323449567973147639}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

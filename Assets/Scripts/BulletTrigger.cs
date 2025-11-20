@@ -1,44 +1,39 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class BulletTrigger : MonoBehaviour
 {
-    public GameObject explosionEffectPrefab; // Ãæµ¹ ÀÌÆåÆ® ÇÁ¸®ÆÕ
+    public GameObject explosionEffectPrefab; // ì¶©ëŒ ì´í™íŠ¸ í”„ë¦¬íŒ¹
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    // ğŸŸ¢ [í•µì‹¬ ìˆ˜ì •] ë¬¼ë¦¬ ì¶©ëŒ(Collision) ëŒ€ì‹  íŠ¸ë¦¬ê±°(Trigger) ì‚¬ìš©
+    // í•„ë…: ì´ì•Œ Prefabì˜ Collider2D ì»´í¬ë„ŒíŠ¸ì—ì„œ 'Is Trigger'ë¥¼ ì²´í¬í•´ì•¼ í•©ë‹ˆë‹¤!
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("ÃÑ¾Ë Ãæµ¹");
-
-        // Ãæµ¹ÇÑ ¿ÀºêÁ§Æ®¿¡¼­ FallingPlatform ½ºÅ©¸³Æ®¸¦ °¡Á®¿È
-        FallingPlatform platform = collision.gameObject.GetComponent<FallingPlatform>();
+        // 1. FallingPlatform ê°ì§€
+        FallingPlatform platform = collision.GetComponent<FallingPlatform>();
 
         if (platform != null)
         {
-            // 1. ¾À¿¡¼­ PlatformSpawner ÀÎ½ºÅÏ½º¸¦ Ã£½À´Ï´Ù. (¾À¿¡ ½ºÆ÷³Ê°¡ ÇÏ³ª¸¸ ÀÖ´Ù°í °¡Á¤)
-            PlatformSpawner spawner = FindObjectOfType<PlatformSpawner>();
+            Debug.Log("ì‹œê°„ ì •ì§€ ì´ì•Œ ëª…ì¤‘!");
 
-            if (spawner != null)
-            {
-                // 2. Spawner¿¡°Ô »ı¼º Áß´Ü ¿äÃ» (½ºÆ÷³Ê´Â Áï½Ã »ı¼º Áß´Ü)
-                spawner.PauseSpawning();
+            // í”Œë«í¼ì—ê²Œ 10ì´ˆê°„ ì–¼ë¼ê³  ëª…ë ¹ (ìŠ¤í¬ë„ˆ ì²˜ë¦¬ëŠ” í”Œë«í¼ì´ ì•Œì•„ì„œ í•¨)
+            platform.Freeze(10f);
 
-                // 3. FallingPlatform¿¡°Ô 10ÃÊ Á¤Áö ¸í·ÉÀ» ³»¸®°í, Á¤Áö ÇØÁ¦ ½Ã »ç¿ëÇÒ Spawner ÂüÁ¶¸¦ Àü´Ş
-                // 10ÃÊ ÈÄ Spawner Àç°³´Â FallingPlatformÀÌ Ã¥ÀÓÁı´Ï´Ù.
-                platform.Freeze(10f, spawner);
-            }
-            else
-            {
-                // ½ºÆ÷³Ê¸¦ Ã£Áö ¸øÇß´õ¶óµµ ÇÃ·§Æû¸¸ Á¤Áö (½ºÆ÷³Ê ±â´É ¾øÀÌ)
-                platform.Freeze(10f, null);
-            }
+            // ì´í™íŠ¸ ìƒì„± ë° ì´ì•Œ íŒŒê´´
+            ShowEffectAndDestroy();
         }
+        // 2. ë²½ì´ë‚˜ ë•…ì— ë‹¿ì•˜ì„ ë•Œë„ ì´ì•Œ ì‚­ì œ (Ground ë ˆì´ì–´ í™•ì¸ í•„ìš”)
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            ShowEffectAndDestroy();
+        }
+    }
 
-        // ÀÌÆåÆ® »ı¼º
+    void ShowEffectAndDestroy()
+    {
         if (explosionEffectPrefab != null)
         {
             Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
         }
-
-        // Ãæµ¹½Ã ÃÑ¾Ë ÆÄ±«
         Destroy(gameObject);
     }
 }
