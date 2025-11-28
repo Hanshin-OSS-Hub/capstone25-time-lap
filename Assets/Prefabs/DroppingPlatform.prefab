@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2170994087832654307}
   - component: {fileID: 8117014784712851727}
   - component: {fileID: 5044662045066010188}
+  - component: {fileID: 2661421834103514172}
   m_Layer: 6
   m_Name: PresentTilemap
   m_TagString: 'Ground '
@@ -192,7 +193,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.0625, y: 0.0625, z: 0}
   m_MaxChunkCount: 16
@@ -233,7 +234,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_CompositeOperation: 0
+  m_CompositeOperation: 1
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
@@ -282,8 +283,67 @@ MonoBehaviour:
   lifetime: 3
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   canBeFrozen: 1
+--- !u!66 &2661421834103514172
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312703164241426760}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 2170994087832654307}
+    m_ColliderPaths:
+    - - X: 20625000
+        Y: 10625000
+      - X: -20625000
+        Y: 10625000
+      - X: -20625000
+        Y: -625000
+      - X: 20625000
+        Y: -625000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 2.062471, y: -0.0625}
+      - {x: 2.062471, y: 1.0625}
+      - {x: -2.0625, y: 1.0624707}
+      - {x: -2.062471, y: -0.0625}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 312703164241426760}
 --- !u!1 &2427222955341407166
 GameObject:
   m_ObjectHideFlags: 0
