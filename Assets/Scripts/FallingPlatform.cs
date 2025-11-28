@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class FallingPlatform : MonoBehaviour
 {
@@ -17,10 +18,11 @@ public class FallingPlatform : MonoBehaviour
 
     public System.Action OnDestroyed;
     private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer;
+    private TilemapRenderer tilemapRenderer;
     private Color originalColor;
     private Collider2D col;
     private Coroutine lifetimeCoroutine;
+
 
     // 🟢 [추가] 스포너가 생성 직후 호출하여 자신을 등록하는 함수
     public void Init(PlatformSpawner spawner)
@@ -31,9 +33,9 @@ public class FallingPlatform : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        tilemapRenderer = GetComponent<TilemapRenderer>();
         col = GetComponent<Collider2D>();
-        originalColor = spriteRenderer.color;
+        originalColor = tilemapRenderer.material.color;
 
         // 물리 충돌로 밀리는 것 방지 (Kinematic)
         rb.bodyType = RigidbodyType2D.Kinematic;
@@ -101,7 +103,11 @@ public class FallingPlatform : MonoBehaviour
         rb.linearVelocity = Vector2.zero; // 멈춤
 
         // 3. 시각 효과
-        spriteRenderer.color = new Color(1f, 1f, 0f, 0.7f);
+        if (tilemapRenderer != null)
+        {
+            // 렌더러의 material 인스턴스를 가져와 색상을 변경합니다.
+            tilemapRenderer.material.color = new Color(1f, 1f, 0f, 0.7f);
+        }
 
         // 4. 스포너 멈춤 요청
         if (mySpawner != null)
@@ -118,7 +124,11 @@ public class FallingPlatform : MonoBehaviour
         if (!isFrozen) return;
 
         isFrozen = false;
-        spriteRenderer.color = originalColor;
+
+        if (tilemapRenderer != null)
+        {
+            tilemapRenderer.material.color = originalColor;
+        }
 
         StartFalling();
 
@@ -137,6 +147,7 @@ public class FallingPlatform : MonoBehaviour
 
     void DestroyPlatform()
     {
+        Transform parentTransform = this.transform.parent;
         // 파괴될 때 스포너가 멈춰있다면 풀어줘야 함
         if (isFrozen && mySpawner != null)
         {
@@ -144,6 +155,7 @@ public class FallingPlatform : MonoBehaviour
         }
 
         OnDestroyed?.Invoke();
+        Destroy(parentTransform.gameObject);    
         Destroy(gameObject);
     }
 

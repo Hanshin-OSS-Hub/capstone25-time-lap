@@ -20,11 +20,13 @@ public class BulletTrigger : MonoBehaviour
 
             // 이펙트 생성 및 총알 파괴
             ShowEffectAndDestroy();
+            Destroy(gameObject);
         }
         // 2. 벽이나 땅에 닿았을 때도 총알 삭제 (Ground 레이어 확인 필요)
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             ShowEffectAndDestroy();
+            Destroy(gameObject);
         }
     }
 

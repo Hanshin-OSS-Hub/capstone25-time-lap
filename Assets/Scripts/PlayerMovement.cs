@@ -12,7 +12,7 @@ public class Movement2D : MonoBehaviour
 
     // 내부 변수
     private Rigidbody2D rigid2D;
-    private CapsuleCollider2D capsuleCollider2D;
+    private BoxCollider2D boxCollider2D;
     private bool isGrounded;
     private int currentJumpCount = 0;
 
@@ -22,20 +22,20 @@ public class Movement2D : MonoBehaviour
     private void Awake()
     {
         rigid2D = GetComponent<Rigidbody2D>();
-        capsuleCollider2D = GetComponent<CapsuleCollider2D>();
+        boxCollider2D = GetComponent<BoxCollider2D>();
 
         // 🟢 [핵심 수정] 벽 끼임 방지 (마찰력 0 설정)
         // 따로 물리 매터리얼을 만들지 않아도, 코드로 즉석에서 '미끄러운 재질'을 만들어 적용합니다.
         PhysicsMaterial2D noFrictionMat = new PhysicsMaterial2D("NoFriction");
         noFrictionMat.friction = 0f;      // 마찰력 제거 (벽에서 미끄러짐)
         noFrictionMat.bounciness = 0f;    // 튕김 제거
-        capsuleCollider2D.sharedMaterial = noFrictionMat;
+        boxCollider2D.sharedMaterial = noFrictionMat;
     }
 
     private void FixedUpdate()
     {
         // 1. 바닥 감지 (BoxCast로 더 안정적으로 변경)
-        Bounds bounds = capsuleCollider2D.bounds;
+        Bounds bounds = boxCollider2D.bounds;
         Vector2 footPosition = new Vector2(bounds.center.x, bounds.min.y);
 
         // 발바닥 너비의 70% 정도만 감지 (가장자리 걸림 방지)
@@ -45,9 +45,9 @@ public class Movement2D : MonoBehaviour
 
         // 2. 점프 횟수 초기화 로직
         // 🟢 속도가 0.1f 이하일 때(미세한 떨림 허용) 바닥으로 인정
-        if (isGrounded && rigid2D.linearVelocity.y <= 0.1f)
+        if (isGrounded /*&& rigid2D.linearVelocity.y <= 0.1f*/)
         {
-            currentJumpCount = maxJumpCount;
+            currentJumpCount = maxJumpCount - 1;
         }
 
         // 3. 점프 높이 조절 (중력 계수 변경)
@@ -71,18 +71,18 @@ public class Movement2D : MonoBehaviour
     {
         if (currentJumpCount > 0)
         {
-            rigid2D.linearVelocity = Vector2.up * jumpForce;
             currentJumpCount--;
+            rigid2D.linearVelocity = Vector2.up * jumpForce;
         }
     }
 
     // 에디터에서 바닥 감지 범위를 보기 위한 함수
     private void OnDrawGizmos()
     {
-        if (capsuleCollider2D != null)
+        if (boxCollider2D != null)
         {
             Gizmos.color = isGrounded ? Color.green : Color.red;
-            Bounds bounds = capsuleCollider2D.bounds;
+            Bounds bounds = boxCollider2D.bounds;
             Vector2 footPos = new Vector2(bounds.center.x, bounds.min.y);
             Gizmos.DrawWireCube(footPos, new Vector2(bounds.size.x * 0.7f, 0.1f));
         }
