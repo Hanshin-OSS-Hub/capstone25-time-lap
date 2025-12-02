@@ -2,69 +2,101 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
-    // [유니티 에디터 할당 변수]
-    public GameObject bulletPrefab; // 총알 프리팹
-    public Transform firePoint;     // 총알이 생성될 위치
-    [Tooltip("초당 발사 가능 횟수")]
-    public float fireRate = 5f;     // 발사 속도
-    public float bulletSpeed = 10f; // 총알 속도
+    [Header("설정")]
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+    public float fireRate = 5f;
+    public float bulletSpeed = 10f;
 
-    // [내부 로직 변수]
-    private float nextFireTime = 0f; // 다음 발사 가능한 시간
+    private float nextFireTime = 0f;
+    private Camera mainCamera;
+
+    void Start()
+    {
+        mainCamera = Camera.main;
+    }
 
     void Update()
     {
-        // 총 회전 함수 호출
-        RotateTowardsMouse();
+        // 1. 정확한 마우스 월드 좌표 계산 (핵심 수정)
+        Vector3 mouseWorldPos = GetMouseWorldPosition();
 
-        // 발사 입력(우클릭) 처리
+        // 2. 캐릭터(Player) 좌우 반전
+        FlipCharacter(mouseWorldPos);
+
+        // 3. 총(Hand/Gun) 회전
+        RotateGun(mouseWorldPos);
+
+        // 4. 발사
         if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime)
         {
-            // 다음 발사 시간 제어: (현재 시간) + (1초 / 발사 속도)
             nextFireTime = Time.time + 1f / fireRate;
-
-            // 총알 발사 함수 호출
-            Shoot();
-            Debug.Log("총알 발사");
+            Shoot(mouseWorldPos);
         }
     }
 
-    // 마우스 위치 방향으로 GunPivot을 회전시키는 함수
-    void RotateTowardsMouse()
+    // ⭐ 핵심 수정 1: 마우스 좌표의 Z값을 카메라 깊이에 맞춰 보정
+    Vector3 GetMouseWorldPosition()
     {
-        Vector3 mouseScreenPosition = Input.mousePosition;
-        // Z축은 카메라 기준으로 설정되어야 2D 월드에서 정확한 좌표를 얻음
-        mouseScreenPosition.z = Camera.main.nearClipPlane;
-
-        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseScreenPosition);
-
-        // 현재 위치에서 마우스 위치로 향하는 방향 벡터
-        Vector3 direction = mouseWorldPosition - transform.position;
-
-        // Atan2(y, x)로 각도를 라디안으로 계산 및 Deg로 변환
-        float angleRadians = Mathf.Atan2(direction.y, direction.x);
-        float angleDegrees = angleRadians * Mathf.Rad2Deg;
-
-        // GunPivot 오브젝트의 Z축 중심으로 마우스 방향으로 회전 적용
-        transform.rotation = Quaternion.Euler(0f, 0f, angleDegrees);
+        Vector3 mouseScreenPos = Input.mousePosition;
+        // 카메라와 0,0,0 평면 사이의 거리만큼 Z를 설정해야 정확한 월드 좌표가 나옵니다.
+        mouseScreenPos.z = -mainCamera.transform.position.z;
+        return mainCamera.ScreenToWorldPoint(mouseScreenPos);
     }
 
-    // 총알을 생성 및 발사 함수
-    void Shoot()
+    // ⭐ 핵심 수정 2: 부모(Player)를 통째로 뒤집기
+    void FlipCharacter(Vector3 mousePos)
     {
-        // 총알 생성
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Transform playerTransform = transform.parent;
+        if (playerTransform != null)
+        {
+            // 마우스가 오른쪽에 있으면 정방향 (1)
+            if (mousePos.x > playerTransform.position.x)
+            {
+                playerTransform.localScale = new Vector3(1, 1, 1);
+            }
+            // 마우스가 왼쪽에 있으면 좌우반전 (-1)
+            else
+            {
+                playerTransform.localScale = new Vector3(-1, 1, 1);
+            }
+        }
+    }
 
-        // 총알의 Rigidbody2D를 가져오기
+    // ⭐ 핵심 수정 3: 뒤집힌 부모에 맞춰 총 회전 각도 보정
+    void RotateGun(Vector3 mousePos)
+    {
+        Vector3 direction = mousePos - transform.position;
+
+        // 부모(Player)가 뒤집혀 있다면(-1), 월드 좌표계의 방향 벡터를 로컬 좌표계로 변환해야 합니다.
+        // 부모 X가 -1이면, 월드에서 '왼쪽'은 로컬에서 '오른쪽'입니다.
+        if (transform.parent.localScale.x < 0)
+        {
+            direction.x = -direction.x; // X축 방향을 뒤집어서 계산
+        }
+
+        // 각도 계산
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        // 회전 적용
+        transform.localRotation = Quaternion.Euler(0, 0, angle);
+    }
+
+    // ⭐ 핵심 수정 4: 총구에서 마우스로 향하는 '진짜' 방향으로 발사
+    void Shoot(Vector3 mousePos)
+    {
+        // 총구에서 마우스까지의 방향 벡터 (정규화)
+        Vector2 shootDirection = (mousePos - firePoint.position).normalized;
+
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
 
         if (rb != null)
         {
-            // 총구가 향하는 방향으로 속도를 부여
-            rb.linearVelocity = firePoint.right * bulletSpeed;
+            // 총의 회전값이나 부모의 반전 여부와 상관없이, 계산된 월드 방향으로 날려보냅니다.
+            rb.linearVelocity = shootDirection * bulletSpeed;
         }
 
-        // 총알 생명 주기 관리
         Destroy(bullet, 2f);
     }
 }
