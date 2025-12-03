@@ -18,6 +18,7 @@ public class Movement2D : MonoBehaviour
 
     // 외부에서 제어하는 변수
     [HideInInspector] public bool isLongJump = false;
+    [HideInInspector] public Vector2 additionalVelocity = Vector2.zero;
 
     private void Awake()
     {
@@ -64,7 +65,8 @@ public class Movement2D : MonoBehaviour
     public void Move(float x)
     {
         // 좌우 이동 (마찰력이 0이어도 velocity를 직접 주므로 미끄러지지 않고 딱 멈춤)
-        rigid2D.linearVelocity = new Vector2(x * speed, rigid2D.linearVelocity.y);
+        Vector2 finalVelocity = new Vector2(x * speed, rigid2D.linearVelocity.y);
+        rigid2D.linearVelocity = finalVelocity + additionalVelocity;
     }
 
     public void Jump()
