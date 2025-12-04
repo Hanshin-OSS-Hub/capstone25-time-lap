@@ -11,6 +11,7 @@ public class BulletTrigger : MonoBehaviour
         // 1. Platform 감지
         FallingPlatform platform = collision.GetComponent<FallingPlatform>();
         MovingPlatform movingPlatform = collision.GetComponent<MovingPlatform>();
+        RotatingFan rotatingFan = collision.GetComponent<RotatingFan>();
 
         if (platform != null)
         {
@@ -32,8 +33,15 @@ public class BulletTrigger : MonoBehaviour
             ShowEffectAndDestroy();
             Destroy(gameObject);
         }
+        else if (rotatingFan != null) // 🟢 환풍기 처리 로직 추가
+        {
+            Debug.Log("환풍기 명중!");
+            rotatingFan.Freeze(10f);
+            ShowEffectAndDestroy();
+            Destroy(gameObject);
+        }
         // 2. 벽이나 땅에 닿았을 때도 총알 삭제 (Ground 레이어 확인 필요)
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        else
         {
             ShowEffectAndDestroy();
             Destroy(gameObject);
