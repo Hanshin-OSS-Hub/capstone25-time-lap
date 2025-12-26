@@ -41,6 +41,7 @@ public class BulletTrigger : MonoBehaviour
             Destroy(gameObject);
         }
         // 2. 벽이나 땅에 닿았을 때도 총알 삭제 (Ground 레이어 확인 필요)
+        else if (collision.CompareTag("Player")) return;
         else
         {
             ShowEffectAndDestroy();

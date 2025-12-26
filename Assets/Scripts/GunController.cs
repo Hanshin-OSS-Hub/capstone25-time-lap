@@ -2,13 +2,21 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
-    [Header("설정")]
-    public GameObject bulletPrefab;
-    public Transform firePoint;
+    [Header("시간 정지 총알 설정 (좌클릭)")]
+    public GameObject freezeBulletPrefab; // 기존 bulletPrefab (이름 변경됨)
     public float fireRate = 5f;
     public float bulletSpeed = 10f;
 
+    [Header("시간 역행 총알 설정 (우클릭)")]
+    public GameObject timeBulletPrefab;   // ⭐ 새로 추가된 프리팹 슬롯
+    public float timeBulletCooldown = 2.0f; // 특수 총알 쿨타임
+
+    [Header("공통 설정")]
+    public Transform firePoint;
+
+    // 내부 변수
     private float nextFireTime = 0f;
+    private float nextTimeBulletTime = 0f;
     private Camera mainCamera;
 
     void Start()
@@ -27,11 +35,18 @@ public class GunController : MonoBehaviour
         // 3. 총(Hand/Gun) 회전
         RotateGun(mouseWorldPos);
 
-        // 4. 발사
+        // 4. 좌클릭: 시간 정지 총알 발사
         if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime)
         {
             nextFireTime = Time.time + 1f / fireRate;
             Shoot(mouseWorldPos);
+        }
+
+        // 5. 우클릭: 시간 역행 총알 발사 (⭐ 새로 추가됨)
+        if (Input.GetMouseButtonDown(1) && Time.time >= nextTimeBulletTime)
+        {
+            nextTimeBulletTime = Time.time + timeBulletCooldown;
+            ShootTimeBullet(mouseWorldPos);
         }
     }
 
@@ -88,7 +103,7 @@ public class GunController : MonoBehaviour
         // 총구에서 마우스까지의 방향 벡터 (정규화)
         Vector2 shootDirection = (mousePos - firePoint.position).normalized;
 
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject bullet = Instantiate(freezeBulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
 
         if (rb != null)
@@ -98,5 +113,25 @@ public class GunController : MonoBehaviour
         }
 
         Destroy(bullet, 2f);
+    }
+
+    // ⭐ 시간 역행 총알 발사 (새로 추가된 함수)
+    void ShootTimeBullet(Vector3 mousePos)
+    {
+        if (timeBulletPrefab == null)
+        {
+            Debug.LogWarning("Time Bullet Prefab이 할당되지 않았습니다!");
+            return;
+        }
+
+        // 총알 생성
+        GameObject bullet = Instantiate(timeBulletPrefab, firePoint.position, Quaternion.identity);
+
+        // TimeReversalBullet 스크립트를 가져와서 목표 지점 설정
+        TimeReversalBullet timeBullet = bullet.GetComponent<TimeReversalBullet>();
+        if (timeBullet != null)
+        {
+            timeBullet.SetTarget(mousePos);
+        }
     }
 }
