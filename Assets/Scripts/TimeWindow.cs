@@ -77,6 +77,18 @@ public class TimeWindow : MonoBehaviour
         else
         {
             myTilemap.RefreshAllTiles();
+
+            CompositeCollider2D composite = myTilemap.GetComponent<CompositeCollider2D>();
+            if (composite != null)
+            {
+                composite.GenerateGeometry(); // 강제로 모양 생성
+                TilemapOutline outline = myTilemap.GetComponent<TilemapOutline>();
+                if (outline != null)
+                {
+                    outline.DrawOutline();
+                }
+            }
+
             Destroy(gameObject, duration);
         }
     }
