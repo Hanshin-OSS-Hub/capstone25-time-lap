@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -45,35 +47,38 @@ public class PlayerController : MonoBehaviour
         if (isDead) return;
 
         // 1. 이동 입력 처리
-        float x = Input.GetAxisRaw("Horizontal");
-        Move(x); // 이동 함수 호출
+        if (isDead == false)
+        {
+            float x = Input.GetAxisRaw("Horizontal");
+            Move(x); // 이동 함수 호출
+            
+            // 2. 애니메이션 처리
+            if (x != 0 && isMove == false && isDead == false)
+            {
+                isMove = true;
+                animator.SetBool("isMove", isMove);
+            }
+            else if (x == 0 && isMove == true && isDead == false)
+            {
+                isMove = false;
+                animator.SetBool("isMove", isMove);
+            }
 
-        // 2. 애니메이션 처리
-        if (x != 0 && isMove == false)
-        {
-            isMove = true;
-            animator.SetBool("isMove", isMove);
-        }
-        else if (x == 0 && isMove == true)
-        {
-            isMove = false;
-            animator.SetBool("isMove", isMove);
-        }
+            // 3. 점프 입력 처리
+            if (Input.GetKeyDown(KeyCode.Space) && isDead == false)
+            {
+                Jump();
+            }
 
-        // 3. 점프 입력 처리
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Jump();
-        }
-
-        // 롱 점프 처리 (스페이스바 유지)
-        if (Input.GetKey(KeyCode.Space))
-        {
-            isLongJump = true;
-        }
-        else if (Input.GetKeyUp(KeyCode.Space))
-        {
-            isLongJump = false;
+            // 롱 점프 처리 (스페이스바 유지)
+            if (Input.GetKey(KeyCode.Space) && isDead == false)
+            {
+                isLongJump = true;
+            }
+            else if (Input.GetKeyUp(KeyCode.Space) && isDead == false)
+            {
+                isLongJump = false;
+            }
         }
     }
 
@@ -138,8 +143,24 @@ public class PlayerController : MonoBehaviour
 
         isGrounded = Physics2D.OverlapBox(footPosition, boxSize, 0f, groundLayer);
     }
+    public void Die()
+    {
+        if (isDead) return; // 이미 죽었다면 무시
 
-    // ⭐ 움직이는 플랫폼 감지 (OnCollisionStay2D) ⭐
+        isDead = true;
+        Debug.Log("플레이어 사망");
+
+        // 움직임 멈춤
+        if (rigid2D != null) rigid2D.linearVelocity = Vector2.zero;
+
+        // 사망 애니메이션 실행
+        if (animator != null) animator.SetBool("isDead", isDead);
+
+        // 재시작 코루틴 시작
+        StartCoroutine(RestartLevelRoutine());
+    }
+
+    // 움직이는 플랫폼 감지 (OnCollisionStay2D)
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("MovingPlatform"))
@@ -174,5 +195,13 @@ public class PlayerController : MonoBehaviour
             Vector2 footPos = new Vector2(bounds.center.x, bounds.min.y);
             Gizmos.DrawWireCube(footPos, new Vector2(bounds.size.x * 0.7f, 0.1f));
         }
+    }
+    IEnumerator RestartLevelRoutine()
+    {
+        // 1초 대기 (애니메이션 볼 시간)
+        yield return new WaitForSeconds(1f);
+
+        // 씬 재시작
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
