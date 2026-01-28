@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using System.Collections;
 
 public class Generator : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class Generator : MonoBehaviour
     // 내부 상태
     private bool isActivated;
     private bool isPlayerInRange = false;
+    private bool isFrozen = false;
     private SpriteRenderer spriteRenderer;
 
     void Start()
@@ -41,11 +43,35 @@ public class Generator : MonoBehaviour
 
     void Update()
     {
+        if (isFrozen) return;
         // 플레이어가 범위 안에 있고 E키를 누르면 토글
         if (isPlayerInRange && Input.GetKeyDown(interactKey))
         {
             ToggleGenerator();
         }
+    }
+    public void Freeze(float duration)
+    {
+        if (isFrozen) return;
+        StartCoroutine(FreezeRoutine(duration));
+    }
+
+    IEnumerator FreezeRoutine(float duration)
+    {
+        isFrozen = true;
+
+        // 시각적 피드백 (회색) & UI 끄기
+        if (spriteRenderer != null) spriteRenderer.color = Color.gray;
+        if (interactUI != null) interactUI.SetActive(false);
+
+        yield return new WaitForSeconds(duration);
+
+        // 해제
+        isFrozen = false;
+        if (spriteRenderer != null) spriteRenderer.color = Color.white;
+
+        // 플레이어가 옆에 있었다면 UI 다시 켜기
+        if (isPlayerInRange && interactUI != null) interactUI.SetActive(true);
     }
 
     void ToggleGenerator()

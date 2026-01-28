@@ -12,6 +12,8 @@ public class BulletTrigger : MonoBehaviour
         FallingPlatform platform = collision.GetComponent<FallingPlatform>();
         MovingPlatform movingPlatform = collision.GetComponent<MovingPlatform>();
         RotatingFan rotatingFan = collision.GetComponent<RotatingFan>();
+        Updraft updraft = collision.GetComponent<Updraft>();
+        Generator generator = collision.GetComponent<Generator>();
 
         if (platform != null)
         {
@@ -39,6 +41,19 @@ public class BulletTrigger : MonoBehaviour
             rotatingFan.Freeze(10f);
             ShowEffectAndDestroy();
             Destroy(gameObject);
+        }
+        else if (updraft != null)
+        {
+            Debug.Log("상승 환풍기 명중!");
+            updraft.Freeze(10f); // 10초간 정지
+            ShowEffectAndDestroy();
+        }
+        // 🟢 발전기
+        else if (generator != null)
+        {
+            Debug.Log("발전기 명중!");
+            generator.Freeze(10f); // 10초간 상호작용 불가
+            ShowEffectAndDestroy();
         }
         // 2. 벽이나 땅에 닿았을 때도 총알 삭제 (Ground 레이어 확인 필요)
         else if (collision.CompareTag("Player")) return;
