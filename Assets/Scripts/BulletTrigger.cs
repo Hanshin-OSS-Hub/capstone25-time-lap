@@ -14,8 +14,10 @@ public class BulletTrigger : MonoBehaviour
         RotatingFan rotatingFan = collision.GetComponent<RotatingFan>();
         Updraft updraft = collision.GetComponent<Updraft>();
         Generator generator = collision.GetComponent<Generator>();
+        FallingSpike spike = collision.GetComponent<FallingSpike>();
+        VanishingPlatform vanishing = collision.GetComponent<VanishingPlatform>();
 
-        if (platform != null)
+        if (platform != null) // 떨어지는 플렛폼
         {
             Debug.Log("시간 정지 총알 명중!");
 
@@ -26,7 +28,7 @@ public class BulletTrigger : MonoBehaviour
             ShowEffectAndDestroy();
             Destroy(gameObject);
         }
-        else if (movingPlatform != null)
+        else if (movingPlatform != null) // 움직이는 플렛폼
         {
             Debug.Log("시간 정지 총알 명중!");
             // 플랫폼에게 10초간 얼라고 명령 (스포너 처리는 플랫폼이 알아서 함)
@@ -35,24 +37,35 @@ public class BulletTrigger : MonoBehaviour
             ShowEffectAndDestroy();
             Destroy(gameObject);
         }
-        else if (rotatingFan != null) // 🟢 환풍기 처리 로직 추가
+        else if (rotatingFan != null) // 환풍기
         {
             Debug.Log("환풍기 명중!");
             rotatingFan.Freeze(10f);
             ShowEffectAndDestroy();
             Destroy(gameObject);
         }
-        else if (updraft != null)
+        else if (updraft != null) // 상승기류 환풍기
         {
             Debug.Log("상승 환풍기 명중!");
             updraft.Freeze(10f); // 10초간 정지
             ShowEffectAndDestroy();
         }
-        // 🟢 발전기
-        else if (generator != null)
+        else if (generator != null) // 발전기
         {
             Debug.Log("발전기 명중!");
             generator.Freeze(10f); // 10초간 상호작용 불가
+            ShowEffectAndDestroy();
+        }
+        else if (spike != null) // 떨어지는 가시
+        {
+            Debug.Log("가시 명중!");
+            spike.Freeze(10f);
+            ShowEffectAndDestroy();
+        }
+        else if (vanishing != null)
+        {
+            Debug.Log("사라지는 발판 명중!");
+            vanishing.Freeze(10f); // 10초간 정지 및 초기화
             ShowEffectAndDestroy();
         }
         // 2. 벽이나 땅에 닿았을 때도 총알 삭제 (Ground 레이어 확인 필요)
