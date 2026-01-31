@@ -178,9 +178,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39ede444941f0d845a392b95b0d4cd54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FallingSpike
+  detectionRange: 10
+  detectionWidth: 5
+  playerTag: Player
   fallSpeed: 20
+  shakeDuration: 1
+  shakeAmount: 0.1
   lifetime: 5
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   canBeFrozen: 1

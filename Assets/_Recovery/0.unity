@@ -43444,6 +43444,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
     - target: {fileID: 7124518129228747490, guid: 7e7e8b5cc5fac15458cc04b743cd1137, type: 3}
+      propertyPath: startActivated
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124518129228747490, guid: 7e7e8b5cc5fac15458cc04b743cd1137, type: 3}
       propertyPath: onTurnOn.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}

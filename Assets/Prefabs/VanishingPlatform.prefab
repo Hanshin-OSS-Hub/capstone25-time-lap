@@ -379,7 +379,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
-  disappearDelay: 2
+  disappearDelay: 1
   reappearDelay: 5
   shakeAmount: 0.05
   canBeFrozen: 1
