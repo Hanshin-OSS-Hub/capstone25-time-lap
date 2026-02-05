@@ -146,7 +146,6 @@ public class MovingPlatform : MonoBehaviour
             rb.linearVelocity = moveDirection * moveSpeed;
     }
 
-    // ... (Freeze, Unfreeze, DestroyPlatform 등 나머지는 기존과 동일) ...
     public void Freeze(float duration)
     {
         if (!canBeFrozen || isFrozen) return;

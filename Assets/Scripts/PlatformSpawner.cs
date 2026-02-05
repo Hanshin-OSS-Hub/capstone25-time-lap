@@ -74,7 +74,7 @@ public class PlatformSpawner : MonoBehaviour
 
         GameObject platformObj = Instantiate(platformPrefab, transform.position, Quaternion.identity);
 
-        // 🟢 [추가] 생성된 플랫폼에게 스포너 정보 전달
+        // 생성된 플랫폼에게 스포너 정보 전달
         FallingPlatform fallingPlatform = platformObj.GetComponent<FallingPlatform>();
         if (fallingPlatform != null)
         {

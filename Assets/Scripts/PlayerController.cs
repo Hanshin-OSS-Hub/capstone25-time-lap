@@ -119,9 +119,23 @@ public class PlayerController : MonoBehaviour
     // 이동 로직
     private void Move(float x)
     {
-        // 입력 속도 + 플랫폼 속도를 합산하여 적용
-        Vector2 finalVelocity = new Vector2(x * speed, rigid2D.linearVelocity.y);
-        rigid2D.linearVelocity = finalVelocity + additionalVelocity;
+        // 1. X축: (입력 속도) + (플랫폼의 X 속도)
+        float targetX = (x * speed) + additionalVelocity.x;
+
+        // 2. Y축: 기본적으로 현재 리지드바디의 Y속도(중력, 점프 등)를 유지
+        float targetY = rigid2D.linearVelocity.y;
+
+        // 3. 움직이는 플랫폼 위에 있을 때의 Y축 특수 처리
+        if (currentPlatformRB != null)
+        {
+            if (additionalVelocity.y < 0 && targetY <= 0.1f)
+            {
+                // 플랫폼 속도보다 살짝 더 빠르게 설정하여 바닥에 딱 붙어있게 만듦 (들뜸 방지)
+                targetY = additionalVelocity.y - 1.0f;
+            }
+        }
+        // 최종 속도 적용
+        rigid2D.linearVelocity = new Vector2(targetX, targetY);
     }
 
     // 점프 로직
