@@ -4,10 +4,13 @@ public class BulletTrigger : MonoBehaviour
 {
     public GameObject explosionEffectPrefab; // 충돌 이펙트 프리팹
 
-    // 🟢 [핵심 수정] 물리 충돌(Collision) 대신 트리거(Trigger) 사용
-    // 필독: 총알 Prefab의 Collider2D 컴포넌트에서 'Is Trigger'를 체크해야 합니다!
+    // 물리 충돌(Collision) 대신 트리거(Trigger) 사용
+    // 필독: 총알 Prefab의 Collider2D 컴포넌트에서 'Is Trigger'를 체크
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // 바람 영역(WindArea)에 닿으면 무시하고 통과
+        if (collision.GetComponent<WindArea>() != null) return;
+
         // 1. Platform 감지
         FallingPlatform platform = collision.GetComponent<FallingPlatform>();
         MovingPlatform movingPlatform = collision.GetComponent<MovingPlatform>();
