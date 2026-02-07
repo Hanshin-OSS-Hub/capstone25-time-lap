@@ -2,21 +2,27 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+[System.Serializable]
+public class FallingPlatformSettings
+{
+    public float fallSpeed = 3f;
+    public float lifetime = 10f;
+    public LayerMask groundLayer;
+}
+
 public class FallingPlatform : MonoBehaviour
 {
-    [Header("낙하 설정")]
-    [SerializeField] private float fallSpeed = 3f;
-    [SerializeField] private float lifetime = 10f;
-    [SerializeField] private LayerMask groundLayer; // 땅 감지용 레이어
+    private float fallSpeed;
+    private float lifetime;
+    private LayerMask groundLayer;
 
     [Header("시간정지 설정")]
     [SerializeField] private bool canBeFrozen = true;
     private bool isFrozen = false;
 
-    // 나를 만든 스포너를 기억하는 변수
     private PlatformSpawner mySpawner;
-
     public System.Action OnDestroyed;
+
     private Rigidbody2D rb;
     private TilemapRenderer tilemapRenderer;
     private Color originalColor;
@@ -25,9 +31,14 @@ public class FallingPlatform : MonoBehaviour
 
 
     // 🟢 [추가] 스포너가 생성 직후 호출하여 자신을 등록하는 함수
-    public void Init(PlatformSpawner spawner)
+    public void Init(PlatformSpawner spawner, FallingPlatformSettings settings)
     {
         this.mySpawner = spawner;
+
+        // 스포너에서 받은 설정 적용
+        this.fallSpeed = settings.fallSpeed;
+        this.lifetime = settings.lifetime;
+        this.groundLayer = settings.groundLayer;
     }
 
     void Start()
@@ -35,9 +46,9 @@ public class FallingPlatform : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         tilemapRenderer = GetComponent<TilemapRenderer>();
         col = GetComponent<Collider2D>();
-        originalColor = tilemapRenderer.material.color;
 
-        // 물리 충돌로 밀리는 것 방지 (Kinematic)
+        if (tilemapRenderer != null) originalColor = tilemapRenderer.material.color;
+
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.useFullKinematicContacts = true;
 

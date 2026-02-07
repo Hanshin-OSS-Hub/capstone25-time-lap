@@ -1,25 +1,35 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+[System.Serializable]
+public class FallingSpikeSettings
+{
+    public float fallSpeed = 10f;
+    public float shakeDuration = 0.5f;
+    public float shakeAmount = 0.1f;
+    public float lifetime = 5f;
+    public LayerMask groundLayer;
+    public float detectionRange = 8f;
+    public float detectionWidth = 0.8f;
+    public string playerTag = "Player";
+}
+
 public class FallingSpike : MonoBehaviour
 {
-    [Header("감지 설정")]
-    [SerializeField] private float detectionRange = 8f;   // 아래로 감지할 거리
-    [SerializeField] private float detectionWidth = 0.8f; // 감지할 폭
-    [SerializeField] private string playerTag = "Player";
-
-    [Header("낙하 설정")]
-    [SerializeField] private float fallSpeed = 10f;
-    [SerializeField] private float shakeDuration = 0.5f;
-    [SerializeField] private float shakeAmount = 0.1f;
-    [SerializeField] private float lifetime = 5f;
-    [SerializeField] private LayerMask groundLayer;
+    private float fallSpeed;
+    private float shakeDuration;
+    private float shakeAmount;
+    private float lifetime;
+    private LayerMask groundLayer;
+    private float detectionRange;
+    private float detectionWidth;
+    private string playerTag;
 
     [Header("시간정지 설정")]
     [SerializeField] private bool canBeFrozen = true;
     private bool isFrozen = false;
 
-    // 내부 상태 변수
+    // 내부 로직 변수
     private bool isTriggered = false;
     private bool isFalling = false;
     private float currentShakeTime = 0f;
@@ -32,12 +42,21 @@ public class FallingSpike : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
     private Collider2D col;
-
     private Coroutine processCoroutine;
 
-    public void Init(PlatformSpawner spawner)
+    public void Init(PlatformSpawner spawner, FallingSpikeSettings settings)
     {
         this.mySpawner = spawner;
+
+        // 매개변수 settings의 값을 내부 변수에 저장
+        this.fallSpeed = settings.fallSpeed;
+        this.shakeDuration = settings.shakeDuration;
+        this.shakeAmount = settings.shakeAmount;
+        this.lifetime = settings.lifetime;
+        this.groundLayer = settings.groundLayer;
+        this.detectionRange = settings.detectionRange;
+        this.detectionWidth = settings.detectionWidth;
+        this.playerTag = settings.playerTag;
     }
 
     void Start()
@@ -48,8 +67,10 @@ public class FallingSpike : MonoBehaviour
 
         if (spriteRenderer != null) originalColor = spriteRenderer.color;
 
+        // 초기 위치 저장
         originalPos = transform.position;
 
+        // 물리 설정
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.useFullKinematicContacts = true;
         rb.linearVelocity = Vector2.zero;
@@ -70,22 +91,19 @@ public class FallingSpike : MonoBehaviour
         }
     }
 
+    // 플레이어 감지 (Tag 사용)
     void DetectPlayer()
     {
-        // BoxCastAll을 사용하여 경로상에 있는 '모든' 물체를 감지
         RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, new Vector2(detectionWidth, 0.1f), 0f, Vector2.down, detectionRange);
 
-        // 감지된 물체들을 하나씩 확인
         foreach (RaycastHit2D hit in hits)
         {
-            // 자기 자신은 감지 제외
             if (hit.collider.gameObject == gameObject) continue;
 
-            // 태그 확인 ("Player")
             if (hit.collider.CompareTag(playerTag))
             {
                 StartTriggerSequence();
-                break; // 플레이어를 찾았으면 루프 종료
+                break;
             }
         }
     }
@@ -116,7 +134,6 @@ public class FallingSpike : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Tag로 비교
         if (collision.CompareTag(playerTag))
         {
             PlayerController player = collision.GetComponent<PlayerController>();
@@ -171,6 +188,7 @@ public class FallingSpike : MonoBehaviour
 
         if (!isTriggered)
         {
+            // 감지 전이면 아무것도 안 함
         }
         else if (!isFalling)
         {
