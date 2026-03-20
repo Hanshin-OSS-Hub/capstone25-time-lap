@@ -6,7 +6,7 @@ public class TimeReversalBullet : MonoBehaviour
     public float speed = 15f; // 날아가는 속도
 
     [Header("시간 회귀(과거 활성화) 설정")]
-    public float effectRadius = 3f;      // 총알 폭발 시 영향을 주는 범위
+    public float effectRadius = 2f;      // 총알 폭발 시 영향을 주는 범위
     public float revertDuration = 5f;    // 과거 상태가 유지되는 시간
     [Tooltip("도착 시 생성할 시각적 이펙트 (과거의 창 프리팹 등)")]
     public GameObject explosionEffectPrefab;
