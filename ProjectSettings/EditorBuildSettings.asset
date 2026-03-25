@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Recovery/0.unity
-    guid: 8ea697a07a03d3147bade4cad05ca7fe
+    path: Assets/Scenes/Title/MainTitle.unity
+    guid: 12683c6244cc4424aaa6fec56adfc875
+  - enabled: 1
+    path: Assets/Scenes/Jung Bin/Bin.unity
+    guid: 4d8fd2f51281b3844af7914a5ff21fea
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
