@@ -14,6 +14,11 @@ public class GunController : MonoBehaviour
     [Header("공통 설정")]
     public Transform firePoint;
 
+    [Header("사운드")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip shootClip;
+    [SerializeField] private AudioClip timeShootClip;
+
     // 내부 변수
     private float nextFireTime = 0f;
     private float nextTimeBulletTime = 0f;
@@ -22,6 +27,7 @@ public class GunController : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -111,6 +117,10 @@ public class GunController : MonoBehaviour
             // 총의 회전값이나 부모의 반전 여부와 상관없이, 계산된 월드 방향으로 날려보냅니다.
             rb.linearVelocity = shootDirection * bulletSpeed;
         }
+        if (audioSource != null && shootClip != null)
+        {
+            audioSource.PlayOneShot(shootClip);
+        }
 
         Destroy(bullet, 2f);
     }
@@ -132,6 +142,10 @@ public class GunController : MonoBehaviour
         if (timeBullet != null)
         {
             timeBullet.SetTarget(mousePos);
+        }
+        if (audioSource != null && timeShootClip != null)
+        {
+            audioSource.PlayOneShot(timeShootClip);
         }
     }
 }

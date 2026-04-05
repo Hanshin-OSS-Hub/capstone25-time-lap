@@ -12,6 +12,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer; // 바닥 레이어
     [SerializeField] private int maxJumpCount = 2; // 최대 점프 횟수
 
+    [Header("사운드")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip jumpClip;
+    [SerializeField] private AudioClip deathClip;
+
     // 상태 변수 (애니메이션 등에서 사용)
     public Animator animator;
     public bool isMove = false;
@@ -34,6 +39,7 @@ public class PlayerController : MonoBehaviour
         rigid2D = GetComponent<Rigidbody2D>();
         boxCollider2D = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         // 🟢 [핵심] 벽 끼임 방지 (마찰력 0 설정)
         PhysicsMaterial2D noFrictionMat = new PhysicsMaterial2D("NoFriction");
@@ -145,6 +151,11 @@ public class PlayerController : MonoBehaviour
         {
             currentJumpCount--;
             rigid2D.linearVelocity = Vector2.up * jumpForce;
+
+            if (audioSource != null && jumpClip != null)
+            {
+                audioSource.PlayOneShot(jumpClip);
+            }
         }
     }
 
@@ -163,6 +174,11 @@ public class PlayerController : MonoBehaviour
 
         isDead = true;
         Debug.Log("플레이어 사망");
+        // 죽는 사운드 재생    
+        if (audioSource != null && deathClip != null)
+        {
+            audioSource.PlayOneShot(deathClip);
+        }
 
         // 움직임 멈춤
         if (rigid2D != null) rigid2D.linearVelocity = Vector2.zero;
