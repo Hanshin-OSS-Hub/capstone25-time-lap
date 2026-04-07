@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7d5a2c45f7c3c7b42bfc8af31fdc265b
+guid: e809fbabc0f4fe74c923351c7e6f6feb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8029459260244521026
-    second: electricField2_0
+      213: 6659026776959650716
+    second: "electricField2 - \uBCF5\uC0AC\uBCF8_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 320
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: electricField2_0
+      name: "electricField2 - \uBCF5\uC0AC\uBCF8_0"
       rect:
         serializedVersion: 2
-        x: 75
-        y: 0
-        width: 342
-        height: 100
+        x: 0
+        y: 36
+        width: 100
+        height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 37, z: 0, w: 38}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebf87ae3851a19090800000000000000
-      internalID: -8029459260244521026
+      spriteID: c9b8e76929d996c50800000000000000
+      internalID: 6659026776959650716
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9496a8ccec2da7b4fb04f74ac9a54d56
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      electricField2_0: -8029459260244521026
+      "electricField2 - \uBCF5\uC0AC\uBCF8_0": 6659026776959650716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

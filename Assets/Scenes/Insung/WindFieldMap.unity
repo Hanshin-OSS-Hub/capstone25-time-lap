@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
       value: 70000000
       objectReference: {fileID: 0}
+    - target: {fileID: 3772106736082618375, guid: ecb8554239737f942931945082a862f6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6659026776959650716, guid: e809fbabc0f4fe74c923351c7e6f6feb, type: 3}
     - target: {fileID: 4272662300118432155, guid: ecb8554239737f942931945082a862f6, type: 3}
       propertyPath: startActive
       value: 0
@@ -218,6 +222,22 @@ PrefabInstance:
     - target: {fileID: 8585889319243136772, guid: ecb8554239737f942931945082a862f6, type: 3}
       propertyPath: m_Name
       value: ElectricField
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816767782297175074, guid: ecb8554239737f942931945082a862f6, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0.11875
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816767782297175074, guid: ecb8554239737f942931945082a862f6, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0.115625
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816767782297175074, guid: ecb8554239737f942931945082a862f6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.06875
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816767782297175074, guid: ecb8554239737f942931945082a862f6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.3125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2172,6 +2192,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   maxJumpCount: 2
+  audioSource: {fileID: 0}
+  jumpClip: {fileID: 0}
+  deathClip: {fileID: 0}
   animator: {fileID: 1369622858}
   isMove: 0
   isJump: 0
@@ -2486,6 +2509,9 @@ MonoBehaviour:
   timeBulletPrefab: {fileID: 531178800415755469, guid: 3eecabc27539c7744bd8cb1b8eb9fc96, type: 3}
   timeBulletCooldown: 2
   firePoint: {fileID: 1882266944}
+  audioSource: {fileID: 0}
+  shootClip: {fileID: 0}
+  timeShootClip: {fileID: 0}
 --- !u!1 &1521311515
 GameObject:
   m_ObjectHideFlags: 0
