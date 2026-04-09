@@ -39,6 +39,9 @@ public class PlatformSpawnerEditor : Editor
                 EditorGUILayout.LabelField("▼ 발판 설정 (Falling Platform)", EditorStyles.boldLabel);
                 EditorGUILayout.BeginVertical("box");
 
+                DrawProperty(fallingSettings, "pauseSpawnerOnFreeze", "얼음 시 스포너 멈춤");
+                EditorGUILayout.Space(5); // 체크박스 아래에 살짝 여백 줌
+
                 // FallingPlatformSettings 내부 변수 직접 그리기
                 DrawProperty(fallingSettings, "fallSpeed", "낙하 속도");
                 DrawProperty(fallingSettings, "lifetime", "수명 (초)");
@@ -51,6 +54,9 @@ public class PlatformSpawnerEditor : Editor
             {
                 EditorGUILayout.LabelField("▼ 가시 설정 (Falling Spike)", EditorStyles.boldLabel);
                 EditorGUILayout.BeginVertical("box");
+
+                DrawProperty(spikeSettings, "pauseSpawnerOnFreeze", "얼음 시 스포너 멈춤");
+                EditorGUILayout.Space(5);
 
                 // FallingSpikeSettings 내부 변수 직접 그리기
                 DrawProperty(spikeSettings, "detectionRange", "감지 거리");

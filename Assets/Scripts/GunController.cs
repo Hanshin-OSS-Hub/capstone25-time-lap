@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class GunController : MonoBehaviour
 {
@@ -6,6 +7,9 @@ public class GunController : MonoBehaviour
     public GameObject freezeBulletPrefab; // 기존 bulletPrefab (이름 변경됨)
     public float fireRate = 5f;
     public float bulletSpeed = 10f;
+    public int maxBullets = 10;      // 최대 총알 개수
+    private int currentBullets;     // 현재 남은 총알 개수
+
 
     [Header("시간 역행 총알 설정 (우클릭)")]
     public GameObject timeBulletPrefab;   // ⭐ 새로 추가된 프리팹 슬롯
@@ -28,6 +32,8 @@ public class GunController : MonoBehaviour
     {
         mainCamera = Camera.main;
         audioSource = GetComponent<AudioSource>();
+        currentBullets = maxBullets;
+        UpdateUI();
     }
 
     void Update()
@@ -106,6 +112,8 @@ public class GunController : MonoBehaviour
     // ⭐ 핵심 수정 4: 총구에서 마우스로 향하는 '진짜' 방향으로 발사
     void Shoot(Vector3 mousePos)
     {
+        if (currentBullets <= 0) return;
+
         // 총구에서 마우스까지의 방향 벡터 (정규화)
         Vector2 shootDirection = (mousePos - firePoint.position).normalized;
 
@@ -121,6 +129,11 @@ public class GunController : MonoBehaviour
         {
             audioSource.PlayOneShot(shootClip);
         }
+
+        currentBullets--;
+        UpdateUI();
+
+        Debug.Log($"빵! 남은 총알: {currentBullets} / {maxBullets}");
 
         Destroy(bullet, 2f);
     }
@@ -146,6 +159,13 @@ public class GunController : MonoBehaviour
         if (audioSource != null && timeShootClip != null)
         {
             audioSource.PlayOneShot(timeShootClip);
+        }
+    }
+    void UpdateUI()
+    {
+        if (UIManager.instance != null)
+        {
+            UIManager.instance.UpdateBulletUI(currentBullets, maxBullets);
         }
     }
 }

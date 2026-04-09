@@ -8,6 +8,8 @@ public class FallingPlatformSettings
     public float fallSpeed = 3f;
     public float lifetime = 10f;
     public LayerMask groundLayer;
+
+    public bool pauseSpawnerOnFreeze = false;
 }
 
 public class FallingPlatform : MonoBehaviour
@@ -15,6 +17,8 @@ public class FallingPlatform : MonoBehaviour
     private float fallSpeed;
     private float lifetime;
     private LayerMask groundLayer;
+
+    private bool pauseSpawnerOnFreeze;
 
     [Header("시간정지 설정")]
     [SerializeField] private bool canBeFrozen = true;
@@ -39,6 +43,8 @@ public class FallingPlatform : MonoBehaviour
         this.fallSpeed = settings.fallSpeed;
         this.lifetime = settings.lifetime;
         this.groundLayer = settings.groundLayer;
+
+        this.pauseSpawnerOnFreeze = settings.pauseSpawnerOnFreeze;
     }
 
     void Start()
@@ -97,7 +103,6 @@ public class FallingPlatform : MonoBehaviour
             rb.linearVelocity = new Vector2(0, -fallSpeed);
     }
 
-    // 🟢 [수정] 스포너 인자를 받을 필요 없이 저장된 mySpawner 사용
     public void Freeze(float duration)
     {
         if (!canBeFrozen || isFrozen) return;
@@ -121,7 +126,7 @@ public class FallingPlatform : MonoBehaviour
         }
 
         // 4. 스포너 멈춤 요청
-        if (mySpawner != null)
+        if (pauseSpawnerOnFreeze && mySpawner != null)
         {
             mySpawner.PauseSpawning();
         }
@@ -144,7 +149,7 @@ public class FallingPlatform : MonoBehaviour
         StartFalling();
 
         // 스포너 재개 요청
-        if (mySpawner != null)
+        if (pauseSpawnerOnFreeze && mySpawner != null)
         {
             mySpawner.ResumeSpawning();
         }
@@ -160,7 +165,7 @@ public class FallingPlatform : MonoBehaviour
     {
         Transform parentTransform = this.transform.parent;
         // 파괴될 때 스포너가 멈춰있다면 풀어줘야 함
-        if (isFrozen && mySpawner != null)
+        if (isFrozen && pauseSpawnerOnFreeze && mySpawner != null)
         {
             mySpawner.ResumeSpawning();
         }
@@ -175,7 +180,7 @@ public class FallingPlatform : MonoBehaviour
         CancelInvoke(nameof(Unfreeze));
 
         // 안전장치: 파괴 시 스포너 재개
-        if (isFrozen && mySpawner != null)
+        if (isFrozen && pauseSpawnerOnFreeze && mySpawner != null)
         {
             mySpawner.ResumeSpawning();
         }

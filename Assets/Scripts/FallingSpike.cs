@@ -12,6 +12,8 @@ public class FallingSpikeSettings
     public float detectionRange = 8f;
     public float detectionWidth = 0.8f;
     public string playerTag = "Player";
+
+    public bool pauseSpawnerOnFreeze = false;
 }
 
 public class FallingSpike : MonoBehaviour
@@ -44,6 +46,8 @@ public class FallingSpike : MonoBehaviour
     private Collider2D col;
     private Coroutine processCoroutine;
 
+    private bool pauseSpawnerOnFreeze;
+
     public void Init(PlatformSpawner spawner, FallingSpikeSettings settings)
     {
         this.mySpawner = spawner;
@@ -57,6 +61,8 @@ public class FallingSpike : MonoBehaviour
         this.detectionRange = settings.detectionRange;
         this.detectionWidth = settings.detectionWidth;
         this.playerTag = settings.playerTag;
+
+        this.pauseSpawnerOnFreeze = settings.pauseSpawnerOnFreeze;
     }
 
     void Start()
@@ -172,7 +178,10 @@ public class FallingSpike : MonoBehaviour
 
         if (spriteRenderer != null) spriteRenderer.color = new Color(1f, 1f, 0f, 0.7f);
 
-        if (mySpawner != null) mySpawner.PauseSpawning();
+        if (pauseSpawnerOnFreeze && mySpawner != null)
+        {
+            mySpawner.PauseSpawning();
+        }
 
         CancelInvoke(nameof(DestroySpike));
 
@@ -199,12 +208,15 @@ public class FallingSpike : MonoBehaviour
             Invoke(nameof(DestroySpike), lifetime);
         }
 
-        if (mySpawner != null) mySpawner.ResumeSpawning();
+        if (pauseSpawnerOnFreeze && mySpawner != null)
+        {
+            mySpawner.ResumeSpawning();
+        }
     }
 
     void DestroySpike()
     {
-        if (isFrozen && mySpawner != null)
+        if (isFrozen && pauseSpawnerOnFreeze && mySpawner != null)
         {
             mySpawner.ResumeSpawning();
         }
@@ -221,7 +233,7 @@ public class FallingSpike : MonoBehaviour
     void OnDestroy()
     {
         CancelInvoke(nameof(Unfreeze));
-        if (isFrozen && mySpawner != null)
+        if (isFrozen && pauseSpawnerOnFreeze && mySpawner != null)
         {
             mySpawner.ResumeSpawning();
         }

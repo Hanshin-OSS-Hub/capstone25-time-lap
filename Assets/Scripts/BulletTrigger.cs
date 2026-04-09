@@ -20,6 +20,8 @@ public class BulletTrigger : MonoBehaviour
         FallingSpike spike = collision.GetComponent<FallingSpike>();
         VanishingPlatform vanishing = collision.GetComponent<VanishingPlatform>();
 
+        PlatformSpawner spawner = collision.GetComponent<PlatformSpawner>();
+
         if (platform != null) // 떨어지는 플렛폼
         {
             Debug.Log("시간 정지 총알 명중!");
@@ -35,7 +37,7 @@ public class BulletTrigger : MonoBehaviour
         {
             Debug.Log("시간 정지 총알 명중!");
             // 플랫폼에게 10초간 얼라고 명령 (스포너 처리는 플랫폼이 알아서 함)
-            movingPlatform.Freeze(10f);
+            movingPlatform.Freeze(5f);
             // 이펙트 생성 및 총알 파괴
             ShowEffectAndDestroy();
             Destroy(gameObject);
@@ -43,32 +45,32 @@ public class BulletTrigger : MonoBehaviour
         else if (rotatingFan != null) // 환풍기
         {
             Debug.Log("환풍기 명중!");
-            rotatingFan.Freeze(10f);
+            rotatingFan.Freeze(5f);
             ShowEffectAndDestroy();
             Destroy(gameObject);
         }
         else if (updraft != null) // 상승기류 환풍기
         {
             Debug.Log("상승 환풍기 명중!");
-            updraft.Freeze(10f); // 10초간 정지
+            updraft.Freeze(5f); // 10초간 정지
             ShowEffectAndDestroy();
         }
         else if (generator != null) // 발전기
         {
             Debug.Log("발전기 명중!");
-            generator.Freeze(10f); // 10초간 상호작용 불가
+            generator.Freeze(5f); // 10초간 상호작용 불가
             ShowEffectAndDestroy();
         }
         else if (spike != null) // 떨어지는 가시
         {
             Debug.Log("가시 명중!");
-            spike.Freeze(10f);
+            spike.Freeze(5f);
             ShowEffectAndDestroy();
         }
         else if (vanishing != null)
         {
             Debug.Log("사라지는 발판 명중!");
-            vanishing.Freeze(10f); // 10초간 정지 및 초기화
+            vanishing.Freeze(5f); // 10초간 정지 및 초기화
             ShowEffectAndDestroy();
         }
         // 2. 벽이나 땅에 닿았을 때도 총알 삭제 (Ground 레이어 확인 필요)

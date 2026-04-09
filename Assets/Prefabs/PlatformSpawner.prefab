@@ -108,3 +108,22 @@ MonoBehaviour:
   autoStart: 1
   oneAtATime: 1
   maxPlatforms: 5
+  fallingSettings:
+    fallSpeed: 3
+    lifetime: 10
+    groundLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    pauseSpawnerOnFreeze: 0
+  spikeSettings:
+    fallSpeed: 10
+    shakeDuration: 0.5
+    shakeAmount: 0.1
+    lifetime: 5
+    groundLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    detectionRange: 8
+    detectionWidth: 0.8
+    playerTag: Player
+    pauseSpawnerOnFreeze: 0

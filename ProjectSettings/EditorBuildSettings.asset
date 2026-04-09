@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jung Bin/Bin.unity
     guid: 4d8fd2f51281b3844af7914a5ff21fea
+  - enabled: 1
+    path: Assets/Scenes/Title/DemoClear.unity
+    guid: 384fd256c26290d40a671be9759ebe73
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
