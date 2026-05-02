@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 8117014784712851727}
   - component: {fileID: 5044662045066010188}
   - component: {fileID: 2661421834103514172}
+  - component: {fileID: 183473301958302431}
+  - component: {fileID: 2784583803747077394}
   m_Layer: 6
   m_Name: PresentTilemap
   m_TagString: 'Ground '
@@ -248,7 +250,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312703164241426760}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -339,6 +341,33 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 312703164241426760}
+--- !u!114 &183473301958302431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312703164241426760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e1fc38c83b6514297e612ead697aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimeBody
+  recordTime: 3
+  revertDuration: 0.4
+  freezeTime: 3
+--- !u!114 &2784583803747077394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312703164241426760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5976082ed026c7d4d9760d5d0197b037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttachToPlatform
 --- !u!1 &2427222955341407166
 GameObject:
   m_ObjectHideFlags: 0

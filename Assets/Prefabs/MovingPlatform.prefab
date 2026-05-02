@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7106968214974417230}
   - component: {fileID: 3468336356802112639}
   - component: {fileID: 3938349998333934422}
+  - component: {fileID: 3846011003498987357}
+  - component: {fileID: 547348324470859749}
   m_Layer: 6
   m_Name: Tilemap
   m_TagString: MovingPlatform
@@ -248,7 +250,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449746480198352248}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -347,6 +349,33 @@ MonoBehaviour:
   isRoundTrip: 1
   autoTurnTime: 3
   canBeFrozen: 1
+--- !u!114 &3846011003498987357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449746480198352248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e1fc38c83b6514297e612ead697aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimeBody
+  recordTime: 3
+  revertDuration: 0.4
+  freezeTime: 3
+--- !u!114 &547348324470859749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449746480198352248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5976082ed026c7d4d9760d5d0197b037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttachToPlatform
 --- !u!1 &8476997587840663368
 GameObject:
   m_ObjectHideFlags: 0
