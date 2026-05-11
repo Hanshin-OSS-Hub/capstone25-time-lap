@@ -78,6 +78,13 @@ public class TimeReversalBullet : MonoBehaviour
             {
                 timeBody.TimeJump();
             }
+
+            RecallPlatform recallPlatform = hit.GetComponent<RecallPlatform>();
+            if (recallPlatform == null) recallPlatform = hit.GetComponentInParent<RecallPlatform>();
+            if (recallPlatform != null)
+            {
+                recallPlatform.AscendToTarget();
+            }
         }
 
         Destroy(gameObject);
