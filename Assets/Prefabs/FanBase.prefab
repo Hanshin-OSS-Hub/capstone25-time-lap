@@ -4908,7 +4908,7 @@ GameObject:
   - component: {fileID: 1841357891350380130}
   - component: {fileID: -5572206702472491934}
   - component: {fileID: 2107258209917681330}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FanBase
   m_TagString: 'Ground '
   m_Icon: {fileID: 0}

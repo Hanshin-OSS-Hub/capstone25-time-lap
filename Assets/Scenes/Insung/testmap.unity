@@ -3922,6 +3922,7 @@ GameObject:
   - component: {fileID: 1369622853}
   - component: {fileID: 1369622852}
   - component: {fileID: 1369622858}
+  - component: {fileID: 1369622859}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3948,8 +3949,8 @@ MonoBehaviour:
     m_Bits: 64
   maxJumpCount: 2
   audioSource: {fileID: 0}
-  jumpClip: {fileID: 0}
-  deathClip: {fileID: 0}
+  jumpClip: {fileID: 8300000, guid: 6601524e20700274bb19d2e1d65f6b72, type: 3}
+  deathClip: {fileID: 8300000, guid: 79ddb1e25fdd9fb4b95b577d2b68d92c, type: 3}
   animator: {fileID: 1369622858}
   isMove: 0
   isJump: 0
@@ -4154,6 +4155,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1369622859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369622850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451cfa5e7d65607439ba0850a431d1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PendulumRider
 --- !u!1 &1463888977
 GameObject:
   m_ObjectHideFlags: 0
@@ -4266,7 +4279,7 @@ MonoBehaviour:
   timeBulletCooldown: 2
   firePoint: {fileID: 1882266944}
   audioSource: {fileID: 0}
-  shootClip: {fileID: 0}
+  shootClip: {fileID: 8300000, guid: f38593710495f5c4f8e714c1238c7bd5, type: 3}
   timeShootClip: {fileID: 0}
 --- !u!1 &1521311515
 GameObject:
@@ -24342,6 +24355,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e7e8b5cc5fac15458cc04b743cd1137, type: 3}
+--- !u!1001 &7352358376975446833
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3439354322050011381, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.05782
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439354322050011381, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.54924
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439354322050011381, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439354322050011381, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439354322050011381, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439354322050011381, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439354322050011381, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439354322050011381, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439354322050011381, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439354322050011381, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834826747601534655, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
+      propertyPath: m_Name
+      value: Pendulum
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d8bb6dbd5007274e81cd8d771266e5d, type: 3}
 --- !u!1001 &7964250681710329678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24433,3 +24503,4 @@ SceneRoots:
   - {fileID: 1547181086692284730}
   - {fileID: 309078867427977281}
   - {fileID: 5988931075830569974}
+  - {fileID: 7352358376975446833}
