@@ -10327,6 +10327,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   maxJumpCount: 2
+  audioSource: {fileID: 0}
+  jumpClip: {fileID: 0}
+  deathClip: {fileID: 0}
   animator: {fileID: 1657722108}
   isMove: 0
   isJump: 0
@@ -10662,9 +10665,13 @@ MonoBehaviour:
   freezeBulletPrefab: {fileID: 531178800415755469, guid: 1e1bf6fd5469bde459acd4d7fe43830b, type: 3}
   fireRate: 5
   bulletSpeed: 20
+  maxBullets: 10
   timeBulletPrefab: {fileID: 531178800415755469, guid: 3eecabc27539c7744bd8cb1b8eb9fc96, type: 3}
   timeBulletCooldown: 2
   firePoint: {fileID: 1325204726}
+  audioSource: {fileID: 0}
+  shootClip: {fileID: 0}
+  timeShootClip: {fileID: 0}
 --- !u!212 &1704762913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12962,6 +12969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1905890563}
   - component: {fileID: 1905890562}
+  - component: {fileID: 1905890564}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -13042,6 +13050,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1905890564
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905890561}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1909313927
 GameObject:
   m_ObjectHideFlags: 0

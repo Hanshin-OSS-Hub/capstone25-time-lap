@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: bde1d3dae98a50244adc28566ba80f08
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1614993479460818979
+    second: thunder device_0
+  - first:
+      213: -650807245644075370
+    second: thunder device_1
+  - first:
+      213: -3995857096401716235
+    second: thunder device_2
+  - first:
+      213: 1629310571513411074
+    second: thunder device_3
+  - first:
+      213: 4162005097946697406
+    second: thunder device_4
+  - first:
+      213: -7437626698052147024
+    second: thunder device_5
+  - first:
+      213: -3132080745220506790
+    second: thunder device_6
+  - first:
+      213: -920138789092483430
+    second: thunder device_7
+  - first:
+      213: 2922375019085425629
+    second: thunder device_8
+  - first:
+      213: -7295383518723525255
+    second: thunder device_9
+  - first:
+      213: -7186779348246480916
+    second: thunder device_10
+  - first:
+      213: -4320483929783971823
+    second: thunder device_11
+  - first:
+      213: -3273348712567603354
+    second: thunder device_12
+  - first:
+      213: -6028205314959267152
+    second: thunder device_13
+  - first:
+      213: 4171774867899094925
+    second: thunder device_14
+  - first:
+      213: -991132244254184496
+    second: thunder device_15
+  - first:
+      213: -8976443260961482304
+    second: thunder device_16
+  - first:
+      213: 3587403432546865429
+    second: thunder device_17
+  - first:
+      213: 1693643073778181267
+    second: thunder device_18
+  - first:
+      213: 8526736757063657545
+    second: thunder device_19
+  - first:
+      213: -5803172871456202740
+    second: thunder device_20
+  - first:
+      213: 793199871752259567
+    second: thunder device_21
+  - first:
+      213: 6732812914280834574
+    second: thunder device_22
+  - first:
+      213: 1067315919959243021
+    second: thunder device_23
+  - first:
+      213: -7502768522425442068
+    second: thunder device_24
+  - first:
+      213: 5680779787015410213
+    second: thunder device_25
+  - first:
+      213: 3356761555477492899
+    second: thunder device_26
+  - first:
+      213: 7080466009879817446
+    second: thunder device_27
+  - first:
+      213: -6041299445464301024
+    second: thunder device_28
+  - first:
+      213: 2947153030081851494
+    second: thunder device_29
+  - first:
+      213: 7720680305127321104
+    second: thunder device_30
+  - first:
+      213: -297310640178591280
+    second: thunder device_31
+  - first:
+      213: -3452181278180041588
+    second: thunder device_32
+  - first:
+      213: -8143320334075674357
+    second: thunder device_33
+  - first:
+      213: -914589599726758754
+    second: thunder device_34
+  - first:
+      213: -3788781637205439869
+    second: thunder device_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: thunder device_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 647
+        width: 108
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf6a2eacf36699e0800000000000000
+      internalID: -1614993479460818979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 647
+        width: 99
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e622a124ed7f6f0800000000000000
+      internalID: -650807245644075370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 647
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb70cb442ddb88c0800000000000000
+      internalID: -3995857096401716235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_3
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 647
+        width: 99
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20678d315597c9610800000000000000
+      internalID: 1629310571513411074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_4
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 647
+        width: 102
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe4a78d59962c930800000000000000
+      internalID: 4162005097946697406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_5
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 647
+        width: 104
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8e3a2aced38c890800000000000000
+      internalID: -7437626698052147024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_6
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 647
+        width: 100
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b7a4d182d9884d0800000000000000
+      internalID: -3132080745220506790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_7
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 647
+        width: 103
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e951c75a20b33f0800000000000000
+      internalID: -920138789092483430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_8
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 647
+        width: 103
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddbef01b89c5e8820800000000000000
+      internalID: 2922375019085425629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_9
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 647
+        width: 99
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975be32a75791ca90800000000000000
+      internalID: -7295383518723525255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_10
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 647
+        width: 102
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7b7ac824e634c90800000000000000
+      internalID: -7186779348246480916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_11
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 647
+        width: 106
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110517bb1ce8a04c0800000000000000
+      internalID: -4320483929783971823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 504
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ffc6950bab292d0800000000000000
+      internalID: -3273348712567603354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 504
+        width: 103
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba2bb07433875ca0800000000000000
+      internalID: -6028205314959267152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_14
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 504
+        width: 99
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87170ca32f15e930800000000000000
+      internalID: 4171774867899094925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_15
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 504
+        width: 104
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db2bcf997ace32f0800000000000000
+      internalID: -991132244254184496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_16
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 504
+        width: 110
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c911f3d9644d6380800000000000000
+      internalID: -8976443260961482304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_17
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 504
+        width: 104
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51119fe3a6409c130800000000000000
+      internalID: 3587403432546865429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_18
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 504
+        width: 99
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39469dcf667018710800000000000000
+      internalID: 1693643073778181267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_19
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 504
+        width: 99
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948ab0a67ed055670800000000000000
+      internalID: 8526736757063657545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_20
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 504
+        width: 100
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c006baa150df67fa0800000000000000
+      internalID: -5803172871456202740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_21
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 504
+        width: 99
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7cdafa413020b00800000000000000
+      internalID: 793199871752259567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_22
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 504
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e062fde6ca1cf6d50800000000000000
+      internalID: 6732812914280834574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_23
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 504
+        width: 99
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d093a40ac2edfce00800000000000000
+      internalID: 1067315919959243021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 256
+        width: 214
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce069dcb7cfc0e790800000000000000
+      internalID: -7502768522425442068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_25
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 255
+        width: 216
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 522d5444e1f26de40800000000000000
+      internalID: 5680779787015410213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_26
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 255
+        width: 219
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a47ced89dc959e20800000000000000
+      internalID: 3356761555477492899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_27
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 256
+        width: 216
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec2d13725ed24260800000000000000
+      internalID: 7080466009879817446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_28
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 255
+        width: 216
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022065b992ef82ca0800000000000000
+      internalID: -6041299445464301024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_29
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 255
+        width: 217
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660beb0f01466e820800000000000000
+      internalID: 2947153030081851494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_30
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 33
+        width: 219
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ee773e4dd552b60800000000000000
+      internalID: 7720680305127321104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_31
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 44
+        width: 217
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d906384c8dbfdbf0800000000000000
+      internalID: -297310640178591280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_32
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 44
+        width: 217
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c13ddfa636710d0800000000000000
+      internalID: -3452181278180041588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_33
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 44
+        width: 215
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0144332d4d1dfe80800000000000000
+      internalID: -8143320334075674357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_34
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 44
+        width: 216
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e941501da99be43f0800000000000000
+      internalID: -914589599726758754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thunder device_35
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 35
+        width: 219
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ac8debc2b8b6bc0800000000000000
+      internalID: -3788781637205439869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 94b26dfa978f8a844b3b333eb2f450cb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      thunder device_0: -1614993479460818979
+      thunder device_1: -650807245644075370
+      thunder device_10: -7186779348246480916
+      thunder device_11: -4320483929783971823
+      thunder device_12: -3273348712567603354
+      thunder device_13: -6028205314959267152
+      thunder device_14: 4171774867899094925
+      thunder device_15: -991132244254184496
+      thunder device_16: -8976443260961482304
+      thunder device_17: 3587403432546865429
+      thunder device_18: 1693643073778181267
+      thunder device_19: 8526736757063657545
+      thunder device_2: -3995857096401716235
+      thunder device_20: -5803172871456202740
+      thunder device_21: 793199871752259567
+      thunder device_22: 6732812914280834574
+      thunder device_23: 1067315919959243021
+      thunder device_24: -7502768522425442068
+      thunder device_25: 5680779787015410213
+      thunder device_26: 3356761555477492899
+      thunder device_27: 7080466009879817446
+      thunder device_28: -6041299445464301024
+      thunder device_29: 2947153030081851494
+      thunder device_3: 1629310571513411074
+      thunder device_30: 7720680305127321104
+      thunder device_31: -297310640178591280
+      thunder device_32: -3452181278180041588
+      thunder device_33: -8143320334075674357
+      thunder device_34: -914589599726758754
+      thunder device_35: -3788781637205439869
+      thunder device_4: 4162005097946697406
+      thunder device_5: -7437626698052147024
+      thunder device_6: -3132080745220506790
+      thunder device_7: -920138789092483430
+      thunder device_8: 2922375019085425629
+      thunder device_9: -7295383518723525255
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
