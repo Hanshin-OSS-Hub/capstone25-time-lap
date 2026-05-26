@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: c54e654badd905e4ab8377f2684b051e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2964531732080088131
+    second: UI panel_0
+  - first:
+      213: -8351024596967691367
+    second: UI panel_1
+  - first:
+      213: 6422501084609191451
+    second: UI panel_2
+  - first:
+      213: -8173565845296435891
+    second: UI panel_3
+  - first:
+      213: 6066003602250065166
+    second: UI panel_4
+  - first:
+      213: -9013353465173536524
+    second: UI panel_5
+  - first:
+      213: -5807006189055223874
+    second: UI panel_6
+  - first:
+      213: -4688518786834824528
+    second: UI panel_7
+  - first:
+      213: 8883545956231151766
+    second: UI panel_8
+  - first:
+      213: 7011263471804941435
+    second: UI panel_9
+  - first:
+      213: 1420123312521780902
+    second: UI panel_10
+  - first:
+      213: -8521645590223043239
+    second: UI panel_11
+  - first:
+      213: -7510163681649758035
+    second: UI panel_12
+  - first:
+      213: -2319861622137841544
+    second: UI panel_13
+  - first:
+      213: 8277070107028303824
+    second: UI panel_14
+  - first:
+      213: -4150704527982667444
+    second: UI panel_15
+  - first:
+      213: -5441058665984543766
+    second: UI panel_16
+  - first:
+      213: 1047972826104187903
+    second: UI panel_17
+  - first:
+      213: -6014859299910807840
+    second: UI panel_18
+  - first:
+      213: 3215749171195752071
+    second: UI panel_19
+  - first:
+      213: -193575486326148033
+    second: UI panel_20
+  - first:
+      213: -8728871703693044472
+    second: UI panel_21
+  - first:
+      213: -3437641165741042020
+    second: UI panel_22
+  - first:
+      213: 4888707875414793102
+    second: UI panel_23
+  - first:
+      213: -4413437191795019540
+    second: UI panel_24
+  - first:
+      213: 8519989077501654335
+    second: UI panel_25
+  - first:
+      213: -1788681116128058853
+    second: UI panel_26
+  - first:
+      213: 3683341735167125069
+    second: UI panel_27
+  - first:
+      213: 7733087428299116522
+    second: UI panel_28
+  - first:
+      213: 6684690814077070992
+    second: UI panel_29
+  - first:
+      213: 7079565799274038278
+    second: UI panel_30
+  - first:
+      213: -5697008411453767379
+    second: UI panel_31
+  - first:
+      213: -6148351679260838600
+    second: UI panel_32
+  - first:
+      213: -1719078372254154196
+    second: UI panel_33
+  - first:
+      213: -8649497747438024698
+    second: UI panel_34
+  - first:
+      213: 8145458951950295102
+    second: UI panel_35
+  - first:
+      213: 5662751138583396846
+    second: UI panel_36
+  - first:
+      213: -3422581310098124348
+    second: UI panel_37
+  - first:
+      213: -171159191919030536
+    second: UI panel_38
+  - first:
+      213: -5581665805702276138
+    second: UI panel_39
+  - first:
+      213: 3269554394065709359
+    second: UI panel_40
+  - first:
+      213: 1238842626950168340
+    second: UI panel_41
+  - first:
+      213: -1590397400665559288
+    second: UI panel_42
+  - first:
+      213: 6098999184540714221
+    second: UI panel_43
+  - first:
+      213: 6031004319797714147
+    second: UI panel_44
+  - first:
+      213: -3202496581759905841
+    second: UI panel_45
+  - first:
+      213: 2953736597740330546
+    second: UI panel_46
+  - first:
+      213: -8754673172592344951
+    second: UI panel_47
+  - first:
+      213: 8079090271105667327
+    second: UI panel_48
+  - first:
+      213: 6515377430662322138
+    second: UI panel_49
+  - first:
+      213: 8336632094531268818
+    second: UI panel_50
+  - first:
+      213: 8430142987341676023
+    second: UI panel_51
+  - first:
+      213: 8741468286343283711
+    second: UI panel_52
+  - first:
+      213: 5368777364648593909
+    second: UI panel_53
+  - first:
+      213: -7480548145171235235
+    second: UI panel_54
+  - first:
+      213: 7384888082342380289
+    second: UI panel_55
+  - first:
+      213: -4811393439223479105
+    second: UI panel_56
+  - first:
+      213: 3147587392596090966
+    second: UI panel_57
+  - first:
+      213: -2447699445129746175
+    second: UI panel_58
+  - first:
+      213: 6604148069684591988
+    second: UI panel_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI panel_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 469
+        width: 303
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344d10057e1242920800000000000000
+      internalID: 2964531732080088131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI panel_12
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 460
+        width: 290
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0f93e0ce986c790800000000000000
+      internalID: -7510163681649758035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI panel_16
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 466
+        width: 288
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae33ee3a8f97d74b0800000000000000
+      internalID: -5441058665984543766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI panel_17
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 466
+        width: 293
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffbc332abb52b8e00800000000000000
+      internalID: 1047972826104187903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI panel_46
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 75
+        width: 303
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e126c39c7cdf820800000000000000
+      internalID: 2953736597740330546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI panel_47
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 73
+        width: 293
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980cdfe3227218680800000000000000
+      internalID: -8754673172592344951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI panel_48
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 104
+        width: 85
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff05195fbc1be1070800000000000000
+      internalID: 8079090271105667327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI panel_49
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 105
+        width: 86
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad79934d0454b6a50800000000000000
+      internalID: 6515377430662322138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c0146198a1727394fa40e4bfa68a3f8f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      UI panel_0: 2964531732080088131
+      UI panel_1: -8351024596967691367
+      UI panel_10: 1420123312521780902
+      UI panel_11: -8521645590223043239
+      UI panel_12: -7510163681649758035
+      UI panel_13: -2319861622137841544
+      UI panel_14: 8277070107028303824
+      UI panel_15: -4150704527982667444
+      UI panel_16: -5441058665984543766
+      UI panel_17: 1047972826104187903
+      UI panel_18: -6014859299910807840
+      UI panel_19: 3215749171195752071
+      UI panel_2: 6422501084609191451
+      UI panel_20: -193575486326148033
+      UI panel_21: -8728871703693044472
+      UI panel_22: -3437641165741042020
+      UI panel_23: 4888707875414793102
+      UI panel_24: -4413437191795019540
+      UI panel_25: 8519989077501654335
+      UI panel_26: -1788681116128058853
+      UI panel_27: 3683341735167125069
+      UI panel_28: 7733087428299116522
+      UI panel_29: 6684690814077070992
+      UI panel_3: -8173565845296435891
+      UI panel_30: 7079565799274038278
+      UI panel_31: -5697008411453767379
+      UI panel_32: -6148351679260838600
+      UI panel_33: -1719078372254154196
+      UI panel_34: -8649497747438024698
+      UI panel_35: 8145458951950295102
+      UI panel_36: 5662751138583396846
+      UI panel_37: -3422581310098124348
+      UI panel_38: -171159191919030536
+      UI panel_39: -5581665805702276138
+      UI panel_4: 6066003602250065166
+      UI panel_40: 3269554394065709359
+      UI panel_41: 1238842626950168340
+      UI panel_42: -1590397400665559288
+      UI panel_43: 6098999184540714221
+      UI panel_44: 6031004319797714147
+      UI panel_45: -3202496581759905841
+      UI panel_46: 2953736597740330546
+      UI panel_47: -8754673172592344951
+      UI panel_48: 8079090271105667327
+      UI panel_49: 6515377430662322138
+      UI panel_5: -9013353465173536524
+      UI panel_50: 8336632094531268818
+      UI panel_51: 8430142987341676023
+      UI panel_52: 8741468286343283711
+      UI panel_53: 5368777364648593909
+      UI panel_54: -7480548145171235235
+      UI panel_55: 7384888082342380289
+      UI panel_56: -4811393439223479105
+      UI panel_57: 3147587392596090966
+      UI panel_58: -2447699445129746175
+      UI panel_59: 6604148069684591988
+      UI panel_6: -5807006189055223874
+      UI panel_7: -4688518786834824528
+      UI panel_8: 8883545956231151766
+      UI panel_9: 7011263471804941435
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
