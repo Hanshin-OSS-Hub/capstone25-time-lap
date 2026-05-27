@@ -83,8 +83,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.015686274, g: 0.8458898, b: 1, a: 1}
+  m_Sprite: {fileID: 2382807631256597039, guid: 81441430caf83dc4c8d0a61d426d900e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -399,4 +399,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeReversalBullet
   speed: 15
-  timeWindowPrefab: {fileID: 5649253538480723218, guid: 54cff19fd84b14e46b957a685c6ab3dc, type: 3}
+  effectRadius: 2
+  revertDuration: 5
+  explosionEffectPrefab: {fileID: 0}

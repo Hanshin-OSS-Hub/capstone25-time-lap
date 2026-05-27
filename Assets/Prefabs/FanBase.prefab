@@ -4908,6 +4908,7 @@ GameObject:
   - component: {fileID: 1841357891350380130}
   - component: {fileID: -5572206702472491934}
   - component: {fileID: 2107258209917681330}
+  - component: {fileID: 8968906946277688342}
   m_Layer: 6
   m_Name: FanBase
   m_TagString: 'Ground '
@@ -4978,8 +4979,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.68911266, g: 0, b: 1, a: 1}
+  m_Sprite: {fileID: -3516406361037340647, guid: 283ff56efd72e9a4d8dfeedf24b8d661, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5027,7 +5028,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.31, y: 1.19}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5052,3 +5053,25 @@ MonoBehaviour:
   maxUpwardSpeed: 8
   fanAnimator: {fileID: 0}
   windEffect: {fileID: 7223139493872454463}
+--- !u!95 &8968906946277688342
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7865582530851350355}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 218e4c69b698fab42a399845c42ce66b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

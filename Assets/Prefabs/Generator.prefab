@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 7945320757033758458}
   - component: {fileID: 4961038877720640713}
   - component: {fileID: 7124518129228747490}
+  - component: {fileID: 1329975234125176742}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -322,7 +323,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1241364442292686508, guid: 9b7ddc1a9acaab04a9f5c712c7a23aae, type: 3}
+  m_Sprite: {fileID: -4550992031882759542, guid: 753c054056230c54296f6023d2464a5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -371,7 +372,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.96, y: 0.71}
+    oldSize: {x: 1.61, y: 1.08}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -480,11 +481,34 @@ MonoBehaviour:
   startActivated: 0
   interactKey: 101
   interactUI: {fileID: 4493221890854265668}
-  onSprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  offSprite: {fileID: 0}
+  onSprite: {fileID: 8917889767705160368, guid: 753c054056230c54296f6023d2464a5b, type: 3}
+  offSprite: {fileID: -4550992031882759542, guid: 753c054056230c54296f6023d2464a5b, type: 3}
+  generatorAnimator: {fileID: 1329975234125176742}
   onTurnOn:
     m_PersistentCalls:
       m_Calls: []
   onTurnOff:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &1329975234125176742
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891302438754339774}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b8aadbf90cebcdc43bcf46bdce73bdfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

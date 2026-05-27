@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 1796567202707733155}
   - component: {fileID: 9028575960897235501}
   - component: {fileID: 3307944547165970166}
+  - component: {fileID: 2057315391794073754}
   m_Layer: 0
   m_Name: RecallPlatform
   m_TagString: Untagged
@@ -115,13 +116,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7441577822929955726, guid: 64885906cdda44c4f8a453ad6d72dfd7, type: 3}
+  m_Sprite: {fileID: 8908510370753055336, guid: 6fe93970b25a1954490ebaacc684e43f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 4, y: 1}
-  m_AdaptiveModeThreshold: 0
+  m_Size: {x: 3, y: 1}
+  m_AdaptiveModeThreshold: 1
   m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
@@ -219,11 +220,33 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1268834, y: 1.125}
-    newSize: {x: 4, y: 1}
-    adaptiveTilingThreshold: 0
+    oldSize: {x: 1.82, y: 1.34}
+    newSize: {x: 3, y: 1}
+    adaptiveTilingThreshold: 1
     drawMode: 2
     adaptiveTiling: 1
   m_AutoTiling: 0
-  m_Size: {x: 4, y: 1}
+  m_Size: {x: 3, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &2057315391794073754
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8603753925703090399}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 08a24a4d44b928446b3bc4c76a19cf72, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

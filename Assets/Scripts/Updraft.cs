@@ -5,18 +5,17 @@ public class Updraft : MonoBehaviour
 {
     [Header("설정")]
     public bool startActive = true;
-    public float windForce = 15f;      // WindArea가 가져다 씀
-    public float maxUpwardSpeed = 8f;  // WindArea가 가져다 씀
+    public float windForce = 15f;
+    public float maxUpwardSpeed = 8f;
 
     [Header("연결")]
-    public Animator fanAnimator;    // 파티클은 자식(WindZone)에 있으므로 찾아서 연결하거나 드래그
+    public Animator fanAnimator;
     public ParticleSystem windEffect;
 
     private bool isWorking = false;
     private bool isFrozen = false;
     private SpriteRenderer spriteRenderer;
 
-    // 자식(WindArea)이 내 상태를 확인할 수 있게 공개
     public bool IsWorking => isWorking && !isFrozen;
 
     void Start()
@@ -70,6 +69,19 @@ public class Updraft : MonoBehaviour
             if (isWorking) windEffect.Play();
             else windEffect.Stop();
         }
-        if (fanAnimator != null) fanAnimator.SetBool("IsOn", isWorking);
+
+        if (fanAnimator != null)
+        {
+            fanAnimator.SetBool("IsOn", isWorking);
+
+            if (isWorking)
+            {
+                fanAnimator.SetTrigger("OnTurnOn");
+            }
+            else
+            {
+                fanAnimator.SetTrigger("OnTurnOff");
+            }
+        }
     }
 }

@@ -4,20 +4,22 @@ using UnityEngine;
 public class RecallPlatform : MonoBehaviour
 {
     [Header("회귀(상승) 설정")]
-    public Transform targetPosition;    // 떠오를 목표 위치
-    public float ascendDuration = 1.0f; // 올라가는 데 걸리는 시간
-    public float stayDuration = 2.0f;   // 목표 지점에서 머무는 시간
+    public Transform targetPosition;
+    public float ascendDuration = 1.0f;
+    public float stayDuration = 2.0f;
 
     [Header("복귀(하강) 설정")]
-    public float descendDuration = 0.3f; // 원래 위치로 빠르게 돌아오는 시간
+    public float descendDuration = 0.3f;
 
-    private Vector3 originalPosition;   // 처음 바닥에 있던 원래 위치를 기억할 변수
+    private Vector3 originalPosition;
     private Rigidbody2D rb;
+    private Animator animator;
     private bool isProcessing = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         originalPosition = transform.position;
 
@@ -30,13 +32,17 @@ public class RecallPlatform : MonoBehaviour
     public void AscendToTarget()
     {
         if (isProcessing || targetPosition == null) return;
-
         StartCoroutine(FullRecallRoutine());
     }
 
     IEnumerator FullRecallRoutine()
     {
         isProcessing = true;
+
+        if (animator != null)
+        {
+            animator.SetTrigger("OnRecall");
+        }
 
         Vector3 startPos = transform.position;
         Vector3 endPos = targetPosition.position;
@@ -59,10 +65,13 @@ public class RecallPlatform : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-
         transform.position = originalPosition;
 
+        if (animator != null)
+        {
+            animator.SetTrigger("OnBreak");
+        }
+
         isProcessing = false;
-        Debug.Log($"[{gameObject.name}] 원래 위치로 복귀 완료. 다시 상호작용 가능!");
     }
 }
