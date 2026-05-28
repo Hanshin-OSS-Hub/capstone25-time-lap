@@ -7585,6 +7585,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5572206702472491934, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5572206702472491934, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 844298738547777413, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 844298738547777413, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
       propertyPath: m_Size.y
       value: 8
@@ -7595,7 +7607,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1029614847710761733, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
       propertyPath: m_LocalScale.x
-      value: 21
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029614847710761733, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.19
       objectReference: {fileID: 0}
     - target: {fileID: 1029614847710761733, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7638,6 +7654,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1841357891350380130, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841357891350380130, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841357891350380130, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
@@ -7663,15 +7687,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7223139493872454463, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
       propertyPath: ShapeModule.m_Scale.x
-      value: 14
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7223139493872454463, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
       propertyPath: ShapeModule.m_Scale.y
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7223139493872454463, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
       propertyPath: ShapeModule.m_Position.y
-      value: 3.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7320795482304700265, guid: 5f4020b6eaa4bdb478ba8c7b3ecf6e97, type: 3}
       propertyPath: windEffect

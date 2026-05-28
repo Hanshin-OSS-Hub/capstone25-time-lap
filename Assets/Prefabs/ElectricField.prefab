@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5724916145491379518}
   - component: {fileID: 2706551145929037546}
   - component: {fileID: 4272662300118432155}
+  - component: {fileID: 6894332629301283903}
   m_Layer: 0
   m_Name: ElectricField
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.5, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.4273255, y: 2.185185, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,12 +84,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 6659026776959650716, guid: e809fbabc0f4fe74c923351c7e6f6feb, type: 3}
+  m_Sprite: {fileID: 9078623318578753597, guid: 9bce71dd988b215418a803f010bcb9f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.44, y: 0.27}
+  m_DrawMode: 1
+  m_Size: {x: 1, y: 0.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -132,10 +133,10 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.27}
-    newSize: {x: 3.44, y: 0.27}
+    oldSize: {x: 11.79, y: 0.59}
+    newSize: {x: 1, y: 0.27}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
@@ -241,4 +242,26 @@ MonoBehaviour:
   startActive: 1
   damageCollider: {fileID: 0}
   visualRenderer: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 6894332629301283903}
+--- !u!95 &6894332629301283903
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8585889319243136772}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7fc48659e306cac41af4bbba8e558755, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
