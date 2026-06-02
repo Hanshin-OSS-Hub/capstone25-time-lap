@@ -2973,6 +2973,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1141469991886433138, guid: 9dbc8ef843acdd0408dceeb59a385b6c, type: 3}
+      propertyPath: nextSceneName
+      value: Stage 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3302190887355153525, guid: 9dbc8ef843acdd0408dceeb59a385b6c, type: 3}
       propertyPath: m_Name
       value: Goal
