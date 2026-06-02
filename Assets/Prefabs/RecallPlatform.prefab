@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 9028575960897235501}
   - component: {fileID: 3307944547165970166}
   - component: {fileID: 2057315391794073754}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RecallPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
