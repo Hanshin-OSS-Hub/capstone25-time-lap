@@ -5,12 +5,12 @@ public class TitleMenuManager : MonoBehaviour
 {
     [Header("씬 설정")]
     [Tooltip("시작 버튼을 누르면 이동할 게임 씬의 이름")]
-    public string firstLevelName = "Stage1";
+    public string firstLevelName = "Stage 1";
 
     public void StartGame()
     {
         Debug.Log("새 게임 시작!");
-        SceneManager.LoadScene("Bin"); 
+        SceneManager.LoadScene("Stage 1 (Tuto)"); 
     }
 
     public void ContinueGame()
