@@ -103,14 +103,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1567f835ad38d9044bdbc0031f3ae9df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformSpawner
-  platformPrefab: {fileID: 2323449567973147639, guid: 6cb2b190c6bc81e4aae50b9b41c6d519, type: 3}
+  platformPrefab: {fileID: 2427222955341407166, guid: 94878626a02590b4c979540c6f3f84d2, type: 3}
   spawnInterval: 2
   autoStart: 1
   oneAtATime: 1
   maxPlatforms: 5
   stopWhenFrozen: 0
   fallingSettings:
-    fallSpeed: 3
+    fallSpeed: 4
     lifetime: 10
     groundLayer:
       serializedVersion: 2
